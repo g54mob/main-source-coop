@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>EvilCore.Settings</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="EvilCore.Managers">
+      <HintPath>..\..\Assemblies\EvilCore.Managers.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore">
+      <HintPath>..\..\Assemblies\EvilCore.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Audio">
+      <HintPath>..\..\Assemblies\EvilCore.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Localization">
+      <HintPath>..\..\Assemblies\EvilCore.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Networking">
+      <HintPath>..\..\Assemblies\EvilCore.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VContainer">
+      <HintPath>..\..\Assemblies\VContainer.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.EvilSave">
+      <HintPath>..\..\Assemblies\EvilCore.EvilSave.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

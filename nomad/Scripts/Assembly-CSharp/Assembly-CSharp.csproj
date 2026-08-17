@@ -1,0 +1,215 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Cinemachine">
+      <HintPath>..\..\Assemblies\Unity.Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="VContainer">
+      <HintPath>..\..\Assemblies\VContainer.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>..\..\Assemblies\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>..\..\Assemblies\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore">
+      <HintPath>..\..\Assemblies\EvilCore.dll</HintPath>
+    </Reference>
+    <Reference Include="MapMagic">
+      <HintPath>..\..\Assemblies\MapMagic.dll</HintPath>
+    </Reference>
+    <Reference Include="Den.Tools">
+      <HintPath>..\..\Assemblies\Den.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\Assemblies\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Networking">
+      <HintPath>..\..\Assemblies\EvilCore.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="com.Epic.OnlineServices">
+      <HintPath>..\..\Assemblies\com.Epic.OnlineServices.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.EvilSave">
+      <HintPath>..\..\Assemblies\EvilCore.EvilSave.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintIn3D">
+      <HintPath>..\..\Assemblies\PaintIn3D.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.DynamicCasting">
+      <HintPath>..\..\Assemblies\EvilCore.DynamicCasting.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintCore">
+      <HintPath>..\..\Assemblies\PaintCore.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Audio">
+      <HintPath>..\..\Assemblies\EvilCore.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.UI">
+      <HintPath>..\..\Assemblies\EvilCore.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Particles">
+      <HintPath>..\..\Assemblies\EvilCore.Particles.dll</HintPath>
+    </Reference>
+    <Reference Include="BroAudio">
+      <HintPath>..\..\Assemblies\BroAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="ECM2">
+      <HintPath>..\..\Assemblies\ECM2.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror.Components">
+      <HintPath>..\..\Assemblies\Mirror.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>..\..\Assemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="RootMotion">
+      <HintPath>..\..\Assemblies\RootMotion.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Localization">
+      <HintPath>..\..\Assemblies\EvilCore.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="PrimeTween.Runtime">
+      <HintPath>..\..\Assemblies\PrimeTween.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Inputs">
+      <HintPath>..\..\Assemblies\EvilCore.Inputs.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>..\..\Assemblies\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Splines">
+      <HintPath>..\..\Assemblies\Unity.Splines.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Assemblies\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="NWH.WheelController">
+      <HintPath>..\..\Assemblies\NWH.WheelController.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="NWH.VehiclePhysics2">
+      <HintPath>..\..\Assemblies\NWH.VehiclePhysics2.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Settings">
+      <HintPath>..\..\Assemblies\EvilCore.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\..\Assemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>..\..\Assemblies\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Enviro3.Runtime">
+      <HintPath>..\..\Assemblies\Enviro3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\Assemblies\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
+      <HintPath>..\..\Assemblies\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\Assemblies\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>..\..\Assemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Coffee.UIEffect">
+      <HintPath>..\..\Assemblies\Coffee.UIEffect.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Extensions">
+      <HintPath>..\..\Assemblies\EvilCore.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="WindshieldRain.Runtime">
+      <HintPath>..\..\Assemblies\WindshieldRain.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="QFSW.QC">
+      <HintPath>..\..\Assemblies\QFSW.QC.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.DI">
+      <HintPath>..\..\Assemblies\EvilCore.DI.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\..\Assemblies\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\Assemblies\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Assemblies\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Assemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Managers">
+      <HintPath>..\..\Assemblies\EvilCore.Managers.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.EvilLogger">
+      <HintPath>..\..\Assemblies\EvilCore.EvilLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\Assemblies\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Assemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="NWH.Common">
+      <HintPath>..\..\Assemblies\NWH.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64">
+      <HintPath>..\..\Assemblies\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask.Addressables">
+      <HintPath>..\..\Assemblies\UniTask.Addressables.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

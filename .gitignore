@@ -1,0 +1,43 @@
+# gitignore runs line-by-line
+.claude/
+.vscode/
+
+# Ignore Assets folder when it's at depth 1: */Assets/
+*/Assets/
+*/Assemblies/
+
+# Exception: do NOT ignore
+# !sim-MineMgl/Assets/
+
+# Un-ignore noimnot/Assets/ but re-ignore audioClips inside it
+# !noimnot/Assets/
+# noimnot/Assets/AudioClip/
+# noimnot/Assets/Texture2D/
+# noimnot/Assets/Font/
+# noimnot/Assets/VideoClip/
+
+*.glb
+# *.png
+
+# Your previous rules
+*/Scripts/Microsoft.*/
+*/Scripts/Newtonsoft.*/
+*/Scripts/*.steamworks.*/
+*/Scripts/System.*/
+*/Scripts/Mono.*/
+*/Scripts/System/System/
+*/Scripts/System/Mono/
+*/Scripts/*.System.*/
+*/Scripts/mscorlib/
+
+*/Scripts/Unity.*/
+*/Scripts/UnityEngine.*/
+*/Scripts/Unity/
+*/Scripts/UnityEngine/
+# **/Unity/
+# **/UnityEngine/
+
+# **/DOTween/
+
+**/Zenject/
+**/JetBrains/

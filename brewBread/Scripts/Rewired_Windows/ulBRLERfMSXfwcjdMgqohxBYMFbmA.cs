@@ -1,0 +1,14 @@
+internal enum ulBRLERfMSXfwcjdMgqohxBYMFbmA
+{
+	X = 0,
+	Y = 4,
+	Z = 8,
+	Buttons0 = 12,
+	Buttons1 = 13,
+	Buttons2 = 14,
+	Buttons3 = 15,
+	Buttons4 = 16,
+	Buttons5 = 17,
+	Buttons6 = 18,
+	Buttons7 = 19
+}

@@ -1,0 +1,27 @@
+namespace AeLa.EasyFeedback.Web
+{
+	internal readonly struct WebResponse
+	{
+		public readonly string Text;
+
+		public readonly bool IsError;
+
+		public readonly long HTTPStatusCode;
+
+		public static WebResponse GetResponse(AsyncWebRequestData requestData)
+		{
+			if (requestData.RequestIsError)
+			{
+				return new WebResponse(requestData.ErrorText, isError: true, requestData.Request.responseCode);
+			}
+			return new WebResponse(requestData.Request.downloadHandler.text, isError: false, requestData.Request.responseCode);
+		}
+
+		public WebResponse(string text, bool isError, long httpStatusCode)
+		{
+			Text = text;
+			IsError = isError;
+			HTTPStatusCode = httpStatusCode;
+		}
+	}
+}

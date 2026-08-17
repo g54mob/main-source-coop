@@ -1,0 +1,88 @@
+using UnityEngine;
+
+namespace Mirror.Examples.Common.Controllers
+{
+	[AddComponentMenu("")]
+	[DisallowMultipleComponent]
+	public class ControllerUIBase : MonoBehaviour
+	{
+		internal string GetKeyText(KeyCode key)
+		{
+			return key switch
+			{
+				KeyCode.None => "", 
+				KeyCode.Escape => "Esc", 
+				KeyCode.BackQuote => "`", 
+				KeyCode.Tilde => "~", 
+				KeyCode.Alpha1 => "1", 
+				KeyCode.Alpha2 => "2", 
+				KeyCode.Alpha3 => "3", 
+				KeyCode.Alpha4 => "4", 
+				KeyCode.Alpha5 => "5", 
+				KeyCode.Alpha6 => "6", 
+				KeyCode.Alpha7 => "7", 
+				KeyCode.Alpha8 => "8", 
+				KeyCode.Alpha9 => "9", 
+				KeyCode.Alpha0 => "0", 
+				KeyCode.Exclaim => "!", 
+				KeyCode.At => "@", 
+				KeyCode.Hash => "#", 
+				KeyCode.Dollar => "$", 
+				KeyCode.Percent => "%", 
+				KeyCode.Caret => "^", 
+				KeyCode.Ampersand => "&", 
+				KeyCode.Asterisk => "*", 
+				KeyCode.LeftParen => "(", 
+				KeyCode.RightParen => ")", 
+				KeyCode.Minus => "-", 
+				KeyCode.Underscore => "_", 
+				KeyCode.Plus => "+", 
+				KeyCode.Equals => "=", 
+				KeyCode.Backspace => "Back", 
+				KeyCode.LeftBracket => "[", 
+				KeyCode.LeftCurlyBracket => "{", 
+				KeyCode.RightBracket => "]", 
+				KeyCode.RightCurlyBracket => "}", 
+				KeyCode.Pipe => "|", 
+				KeyCode.Backslash => "\\", 
+				KeyCode.Semicolon => ";", 
+				KeyCode.Colon => ":", 
+				KeyCode.Quote => "'", 
+				KeyCode.DoubleQuote => "\"", 
+				KeyCode.Return => "⏎", 
+				KeyCode.Comma => ",", 
+				KeyCode.Less => "<", 
+				KeyCode.Period => ".", 
+				KeyCode.Greater => ">", 
+				KeyCode.Slash => "/", 
+				KeyCode.Question => "?", 
+				KeyCode.UpArrow => "▲", 
+				KeyCode.LeftArrow => "◄", 
+				KeyCode.DownArrow => "▼", 
+				KeyCode.RightArrow => "►", 
+				KeyCode.PageUp => "Page\nUp", 
+				KeyCode.PageDown => "Page\nDown", 
+				KeyCode.Insert => "Ins", 
+				KeyCode.Delete => "Del", 
+				KeyCode.Keypad1 => "Pad\n1", 
+				KeyCode.Keypad2 => "Pad\n2", 
+				KeyCode.Keypad3 => "Pad\n3", 
+				KeyCode.Keypad4 => "Pad\n4", 
+				KeyCode.Keypad5 => "Pad\n5", 
+				KeyCode.Keypad6 => "Pad\n6", 
+				KeyCode.Keypad7 => "Pad\n7", 
+				KeyCode.Keypad8 => "Pad\n8", 
+				KeyCode.Keypad9 => "Pad\n9", 
+				KeyCode.Keypad0 => "Pad\n0", 
+				KeyCode.KeypadDivide => "Pad\n/", 
+				KeyCode.KeypadMultiply => "Pad\n*", 
+				KeyCode.KeypadMinus => "Pad\n-", 
+				KeyCode.KeypadPlus => "Pad\n+", 
+				KeyCode.KeypadEquals => "Pad\n=", 
+				KeyCode.KeypadPeriod => "Pad\n.", 
+				KeyCode.KeypadEnter => "Pad\n⏎", 
+				_ => key.ToString(), 
+			};
+		}
+	}
+}

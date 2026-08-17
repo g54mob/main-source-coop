@@ -1,0 +1,76 @@
+using EvilCore;
+using NomadDrive.Features.Interaction;
+using UnityEngine.Events;
+
+namespace NomadDrive.Features.Furnitures
+{
+	public class Shower : Interactable, IInitialize
+	{
+		private BasicInteraction _basicInteraction;
+
+		private bool _isHandleOn;
+
+		public UnityEvent OnShowerOn { get; } = new UnityEvent();
+
+		public UnityEvent OnShowerOff { get; } = new UnityEvent();
+
+		public bool IsOn { get; set; }
+
+		public bool IsInitialized { get; set; }
+
+		public void Init()
+		{
+			_basicInteraction = GetComponent<BasicInteraction>();
+			IsOn = false;
+			IsInitialized = true;
+		}
+
+		public void CheckState()
+		{
+			if (_isHandleOn)
+			{
+				On();
+			}
+			else
+			{
+				Off();
+			}
+		}
+
+		public void OnHandle()
+		{
+			_isHandleOn = true;
+			CheckState();
+			SetBasicInteraction(OffHandle, "@interaction.off");
+		}
+
+		private void OffHandle()
+		{
+			_isHandleOn = false;
+			CheckState();
+			SetBasicInteraction(OnHandle, "@interaction.on");
+		}
+
+		private void On()
+		{
+			if (!IsOn)
+			{
+				OnShowerOn.Invoke();
+			}
+		}
+
+		public void Off()
+		{
+			if (IsOn)
+			{
+				IsOn = false;
+				OnShowerOff.Invoke();
+			}
+		}
+
+		public override bool Weaved()
+		{
+			return true;
+		}
+	}
+}

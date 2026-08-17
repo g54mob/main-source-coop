@@ -1,0 +1,11 @@
+namespace FMOD
+{
+	public enum DSP_LOUDNESS_METER_STATE_TYPE
+	{
+		RESET_INTEGRATED = -3,
+		RESET_MAXPEAK = -2,
+		RESET_ALL = -1,
+		PAUSED = 0,
+		ANALYZING = 1
+	}
+}

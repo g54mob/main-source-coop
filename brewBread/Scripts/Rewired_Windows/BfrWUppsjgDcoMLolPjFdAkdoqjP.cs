@@ -1,0 +1,6 @@
+internal struct BfrWUppsjgDcoMLolPjFdAkdoqjP
+{
+	public NXPCBEDXCQFnUVkafhIcnwaFbhfxA UrAsNmnqXXrNEmAIJfPTgKWkLplib;
+
+	public QNbHgJKirIhycWNnQDfPXVqZnPMS SLiAoYlVGghtYaTsqZskXzfouFkm;
+}

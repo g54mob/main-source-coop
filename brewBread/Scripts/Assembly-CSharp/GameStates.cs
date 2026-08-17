@@ -1,0 +1,10 @@
+public enum GameStates
+{
+	MAINMENU = 0,
+	CHARACTERSELECION = 1,
+	OPTIONSMENU = 2,
+	CONTROLSMENU = 3,
+	STARTGAME = 4,
+	INGAME = 5,
+	WIN = 6
+}

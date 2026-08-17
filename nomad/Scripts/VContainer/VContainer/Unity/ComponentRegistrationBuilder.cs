@@ -1,0 +1,93 @@
+using System;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using VContainer.Internal;
+
+namespace VContainer.Unity
+{
+	public sealed class ComponentRegistrationBuilder : RegistrationBuilder
+	{
+		private readonly object instance;
+
+		private readonly Func<IObjectResolver, Component> prefabFinder;
+
+		private readonly string gameObjectName;
+
+		private ComponentDestination destination;
+
+		private Scene scene;
+
+		internal ComponentRegistrationBuilder(object instance)
+			: base(instance.GetType(), Lifetime.Singleton)
+		{
+			this.instance = instance;
+		}
+
+		internal ComponentRegistrationBuilder(in Scene scene, Type implementationType)
+			: base(implementationType, Lifetime.Singleton)
+		{
+			this.scene = scene;
+		}
+
+		internal ComponentRegistrationBuilder(Func<IObjectResolver, Component> prefabFinder, Type implementationType, Lifetime lifetime)
+			: base(implementationType, lifetime)
+		{
+			this.prefabFinder = prefabFinder;
+		}
+
+		internal ComponentRegistrationBuilder(string gameObjectName, Type implementationType, Lifetime lifetime)
+			: base(implementationType, lifetime)
+		{
+			this.gameObjectName = gameObjectName;
+		}
+
+		public override Registration Build()
+		{
+			IInstanceProvider provider;
+			if (instance != null)
+			{
+				IInjector orBuild = InjectorCache.GetOrBuild(ImplementationType);
+				provider = new ExistingComponentProvider(instance, orBuild, Parameters, destination.DontDestroyOnLoad);
+			}
+			else if (scene.IsValid())
+			{
+				provider = new FindComponentProvider(ImplementationType, Parameters, in scene, in destination);
+			}
+			else if (prefabFinder != null)
+			{
+				IInjector orBuild2 = InjectorCache.GetOrBuild(ImplementationType);
+				provider = new PrefabComponentProvider(prefabFinder, orBuild2, Parameters, in destination);
+			}
+			else
+			{
+				IInjector orBuild3 = InjectorCache.GetOrBuild(ImplementationType);
+				provider = new NewGameObjectProvider(ImplementationType, orBuild3, Parameters, in destination, gameObjectName);
+			}
+			return new Registration(ImplementationType, Lifetime, InterfaceTypes, provider);
+		}
+
+		public ComponentRegistrationBuilder UnderTransform(Transform parent)
+		{
+			destination.Parent = parent;
+			return this;
+		}
+
+		public ComponentRegistrationBuilder UnderTransform(Func<Transform> parentFinder)
+		{
+			destination.ParentFinder = (IObjectResolver _) => parentFinder();
+			return this;
+		}
+
+		public ComponentRegistrationBuilder UnderTransform(Func<IObjectResolver, Transform> parentFinder)
+		{
+			destination.ParentFinder = parentFinder;
+			return this;
+		}
+
+		public ComponentRegistrationBuilder DontDestroyOnLoad()
+		{
+			destination.DontDestroyOnLoad = true;
+			return this;
+		}
+	}
+}

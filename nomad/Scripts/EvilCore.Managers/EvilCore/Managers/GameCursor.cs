@@ -1,0 +1,19 @@
+using UnityEngine;
+
+namespace EvilCore.Managers
+{
+	public static class GameCursor
+	{
+		public static void Lock()
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+		}
+
+		public static void Unlock()
+		{
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
+		}
+	}
+}

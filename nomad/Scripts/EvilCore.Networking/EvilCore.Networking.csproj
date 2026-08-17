@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>EvilCore.Networking</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="com.Epic.OnlineServices">
+      <HintPath>..\..\Assemblies\com.Epic.OnlineServices.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilAnalytics.Shared">
+      <HintPath>..\..\Assemblies\EvilAnalytics.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>..\..\Assemblies\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore">
+      <HintPath>..\..\Assemblies\EvilCore.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.DI">
+      <HintPath>..\..\Assemblies\EvilCore.DI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="VContainer">
+      <HintPath>..\..\Assemblies\VContainer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Facepunch.Steamworks.Win64">
+      <HintPath>..\..\Assemblies\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="com.playeveryware.eos.core">
+      <HintPath>..\..\Assemblies\com.playeveryware.eos.core.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.EvilLogger">
+      <HintPath>..\..\Assemblies\EvilCore.EvilLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilAnalytics.SDK">
+      <HintPath>..\..\Assemblies\EvilAnalytics.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror.Transports">
+      <HintPath>..\..\Assemblies\Mirror.Transports.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Assemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.EvilSave">
+      <HintPath>..\..\Assemblies\EvilCore.EvilSave.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Extensions">
+      <HintPath>..\..\Assemblies\EvilCore.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

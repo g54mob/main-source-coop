@@ -1,0 +1,89 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>EvilCore.UI</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net40</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="BroAudio">
+      <HintPath>..\..\Assemblies\BroAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Inputs">
+      <HintPath>..\..\Assemblies\EvilCore.Inputs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Localization">
+      <HintPath>..\..\Assemblies\EvilCore.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Networking">
+      <HintPath>..\..\Assemblies\EvilCore.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore">
+      <HintPath>..\..\Assemblies\EvilCore.dll</HintPath>
+    </Reference>
+    <Reference Include="PrimeTween.Runtime">
+      <HintPath>..\..\Assemblies\PrimeTween.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Audio">
+      <HintPath>..\..\Assemblies\EvilCore.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Settings">
+      <HintPath>..\..\Assemblies\EvilCore.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="VContainer">
+      <HintPath>..\..\Assemblies\VContainer.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64">
+      <HintPath>..\..\Assemblies\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.Extensions">
+      <HintPath>..\..\Assemblies\EvilCore.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>..\..\Assemblies\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="EvilCore.Managers">
+      <HintPath>..\..\Assemblies\EvilCore.Managers.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilCore.EvilSave">
+      <HintPath>..\..\Assemblies\EvilCore.EvilSave.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilAnalytics.SDK">
+      <HintPath>..\..\Assemblies\EvilAnalytics.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="EvilAnalytics.Shared">
+      <HintPath>..\..\Assemblies\EvilAnalytics.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Assemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

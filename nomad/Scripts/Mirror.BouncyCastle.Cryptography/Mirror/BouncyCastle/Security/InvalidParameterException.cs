@@ -1,0 +1,23 @@
+using System;
+using System.Runtime.Serialization;
+
+namespace Mirror.BouncyCastle.Security
+{
+	[Serializable]
+	public class InvalidParameterException : KeyException
+	{
+		public InvalidParameterException()
+		{
+		}
+
+		public InvalidParameterException(string message)
+			: base(message)
+		{
+		}
+
+		protected InvalidParameterException(SerializationInfo info, StreamingContext context)
+			: base(info, context)
+		{
+		}
+	}
+}

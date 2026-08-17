@@ -1,0 +1,12 @@
+using UnityEngine;
+
+namespace FIMSpace.FProceduralAnimation
+{
+	public class LAM_FadeLegsSystemOnAnimator : LAM_FadeOnAnimatorStatusBase
+	{
+		protected override void OnFadeAction(LegsAnimator.LegsAnimatorCustomModuleHelper helper, float fadeValue)
+		{
+			helper.Parent.LegsAnimatorBlend = Mathf.Max(0.001f, fadeValue);
+		}
+	}
+}

@@ -1,0 +1,25 @@
+internal enum ttStGORgZxKpqJaVPgxviGIsSRMCA
+{
+	None = 0,
+	LeftStickX = 1,
+	LeftStickY = 2,
+	RightStickX = 3,
+	RightStickY = 4,
+	A = 5,
+	B = 6,
+	X = 7,
+	Y = 8,
+	Back = 9,
+	Start = 10,
+	Guide = 11,
+	LeftShoulder = 12,
+	RightShoulder = 13,
+	LeftTrigger = 14,
+	RightTrigger = 15,
+	LeftStickButton = 16,
+	RightStickButton = 17,
+	DPadUp = 18,
+	DPadRight = 19,
+	DPadDown = 20,
+	DPadLeft = 21
+}

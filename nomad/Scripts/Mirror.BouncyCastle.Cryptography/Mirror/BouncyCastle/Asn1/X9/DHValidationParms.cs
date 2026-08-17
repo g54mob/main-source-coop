@@ -1,0 +1,44 @@
+using System;
+using Mirror.BouncyCastle.Utilities;
+
+namespace Mirror.BouncyCastle.Asn1.X9
+{
+	public class DHValidationParms : Asn1Encodable
+	{
+		private readonly DerBitString seed;
+
+		private readonly DerInteger pgenCounter;
+
+		public DerBitString Seed => seed;
+
+		public DerInteger PgenCounter => pgenCounter;
+
+		public static DHValidationParms GetInstance(object obj)
+		{
+			if (obj == null || obj is DHValidationParms)
+			{
+				return (DHValidationParms)obj;
+			}
+			if (obj is Asn1Sequence)
+			{
+				return new DHValidationParms((Asn1Sequence)obj);
+			}
+			throw new ArgumentException("Invalid DHValidationParms: " + Platform.GetTypeName(obj), "obj");
+		}
+
+		private DHValidationParms(Asn1Sequence seq)
+		{
+			if (seq.Count != 2)
+			{
+				throw new ArgumentException("Bad sequence size: " + seq.Count, "seq");
+			}
+			seed = DerBitString.GetInstance(seq[0]);
+			pgenCounter = DerInteger.GetInstance(seq[1]);
+		}
+
+		public override Asn1Object ToAsn1Object()
+		{
+			return new DerSequence(seed, pgenCounter);
+		}
+	}
+}

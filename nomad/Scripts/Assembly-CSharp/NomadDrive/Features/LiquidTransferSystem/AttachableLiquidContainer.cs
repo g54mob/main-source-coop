@@ -1,0 +1,50 @@
+using EvilCore.EvilPack.EvilLogger;
+using NomadDrive.Features.Attachables;
+using NomadDrive.Features.LiquidTransferSystem.UI;
+using UnityEngine;
+using VContainer;
+
+namespace NomadDrive.Features.LiquidTransferSystem
+{
+	[RequireComponent(typeof(LiquidContainerComponent))]
+	public class AttachableLiquidContainer : AttachableObject
+	{
+		[Inject]
+		protected LiquidContainerInfoPanel LiquidContainerInfoPanel;
+
+		private LiquidSnapTarget _snapTarget;
+
+		[field: SerializeField]
+		public LiquidContainerComponent LiquidContainer { get; set; }
+
+		protected override void Awake()
+		{
+			base.Awake();
+			LiquidContainer = GetComponent<LiquidContainerComponent>();
+			_snapTarget = GetComponent<LiquidSnapTarget>();
+			if (LiquidContainer == null)
+			{
+				EvilLogger.LogError("LiquidContainerComponent is missing on " + base.gameObject.name, "Awake", "A:\\Nomad Drive Folder\\NomadDrive\\Assets\\_Project\\Features\\LiquidTransferSystem\\Scripts\\Core\\AttachableLiquidContainer.cs", 25);
+			}
+		}
+
+		protected override void OnHovered()
+		{
+			base.OnHovered();
+			LiquidContainerInfoPanel.OnLiquidContainerHovered(LiquidContainer);
+			_snapTarget?.SetSnap(active: true);
+		}
+
+		protected override void OnUnhovered()
+		{
+			base.OnUnhovered();
+			LiquidContainerInfoPanel.OnLiquidContainerHovered(null);
+			_snapTarget?.SetSnap(active: false);
+		}
+
+		public override bool Weaved()
+		{
+			return true;
+		}
+	}
+}

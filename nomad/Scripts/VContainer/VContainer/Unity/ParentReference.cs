@@ -1,0 +1,52 @@
+using System;
+using System.Reflection;
+using UnityEngine;
+
+namespace VContainer.Unity
+{
+	[Serializable]
+	public struct ParentReference : ISerializationCallbackReceiver
+	{
+		[SerializeField]
+		public string TypeName;
+
+		[NonSerialized]
+		public LifetimeScope Object;
+
+		public Type Type { get; private set; }
+
+		private ParentReference(Type type)
+		{
+			Type = type;
+			TypeName = type.FullName;
+			Object = null;
+		}
+
+		void ISerializationCallbackReceiver.OnBeforeSerialize()
+		{
+			TypeName = Type?.FullName;
+		}
+
+		void ISerializationCallbackReceiver.OnAfterDeserialize()
+		{
+			if (string.IsNullOrEmpty(TypeName))
+			{
+				return;
+			}
+			Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
+			foreach (Assembly assembly in assemblies)
+			{
+				Type = assembly.GetType(TypeName);
+				if (Type != null)
+				{
+					break;
+				}
+			}
+		}
+
+		public static ParentReference Create<T>() where T : LifetimeScope
+		{
+			return new ParentReference(typeof(T));
+		}
+	}
+}

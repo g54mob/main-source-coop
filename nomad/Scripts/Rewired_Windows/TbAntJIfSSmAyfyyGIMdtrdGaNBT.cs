@@ -1,0 +1,356 @@
+using System;
+using Rewired.Utils;
+
+internal static class TbAntJIfSSmAyfyyGIMdtrdGaNBT
+{
+	private unsafe static void CquAaYWWwCPczwkarFNaITnxLldSA(byte* P_0, byte* P_1, uint P_2)
+	{
+		if ((uint)((int)P_0 - (int)P_1) < P_2)
+		{
+			throw new Exception("Overlapping buffers not supported!");
+		}
+		switch (P_2)
+		{
+		case 0u:
+			return;
+		case 1u:
+			*P_0 = *P_1;
+			return;
+		case 2u:
+			*(short*)P_0 = *(short*)P_1;
+			return;
+		case 3u:
+			*(short*)P_0 = *(short*)P_1;
+			P_0[2] = P_1[2];
+			return;
+		case 4u:
+			*(int*)P_0 = *(int*)P_1;
+			return;
+		case 5u:
+			*(int*)P_0 = *(int*)P_1;
+			P_0[4] = P_1[4];
+			return;
+		case 6u:
+			*(int*)P_0 = *(int*)P_1;
+			((short*)P_0)[2] = ((short*)P_1)[2];
+			return;
+		case 7u:
+			*(int*)P_0 = *(int*)P_1;
+			((short*)P_0)[2] = ((short*)P_1)[2];
+			P_0[6] = P_1[6];
+			return;
+		case 8u:
+			*(int*)P_0 = *(int*)P_1;
+			((int*)P_0)[1] = ((int*)P_1)[1];
+			return;
+		case 9u:
+			*(int*)P_0 = *(int*)P_1;
+			((int*)P_0)[1] = ((int*)P_1)[1];
+			P_0[8] = P_1[8];
+			return;
+		case 10u:
+			*(int*)P_0 = *(int*)P_1;
+			((int*)P_0)[1] = ((int*)P_1)[1];
+			((short*)P_0)[4] = ((short*)P_1)[4];
+			return;
+		case 11u:
+			*(int*)P_0 = *(int*)P_1;
+			((int*)P_0)[1] = ((int*)P_1)[1];
+			((short*)P_0)[4] = ((short*)P_1)[4];
+			P_0[10] = P_1[10];
+			return;
+		case 12u:
+			*(int*)P_0 = *(int*)P_1;
+			((int*)P_0)[1] = ((int*)P_1)[1];
+			((int*)P_0)[2] = ((int*)P_1)[2];
+			return;
+		case 13u:
+			*(int*)P_0 = *(int*)P_1;
+			((int*)P_0)[1] = ((int*)P_1)[1];
+			((int*)P_0)[2] = ((int*)P_1)[2];
+			P_0[12] = P_1[12];
+			return;
+		case 14u:
+			*(int*)P_0 = *(int*)P_1;
+			((int*)P_0)[1] = ((int*)P_1)[1];
+			((int*)P_0)[2] = ((int*)P_1)[2];
+			((short*)P_0)[6] = ((short*)P_1)[6];
+			return;
+		case 15u:
+			*(int*)P_0 = *(int*)P_1;
+			((int*)P_0)[1] = ((int*)P_1)[1];
+			((int*)P_0)[2] = ((int*)P_1)[2];
+			((short*)P_0)[6] = ((short*)P_1)[6];
+			P_0[14] = P_1[14];
+			return;
+		case 16u:
+			*(int*)P_0 = *(int*)P_1;
+			((int*)P_0)[1] = ((int*)P_1)[1];
+			((int*)P_0)[2] = ((int*)P_1)[2];
+			((int*)P_0)[3] = ((int*)P_1)[3];
+			return;
+		}
+		if (((int)P_0 & 3) != 0)
+		{
+			if (((int)P_0 & 1) != 0)
+			{
+				*P_0 = *P_1;
+				P_1++;
+				P_0++;
+				P_2--;
+				if (((int)P_0 & 2) == 0)
+				{
+					goto IL_01d7;
+				}
+			}
+			*(short*)P_0 = *(short*)P_1;
+			P_1 += 2;
+			P_0 += 2;
+			P_2 -= 2;
+		}
+		goto IL_01d7;
+		IL_01d7:
+		for (uint num = P_2 / 16; num != 0; num--)
+		{
+			*(int*)P_0 = *(int*)P_1;
+			((int*)P_0)[1] = ((int*)P_1)[1];
+			((int*)P_0)[2] = ((int*)P_1)[2];
+			((int*)P_0)[3] = ((int*)P_1)[3];
+			P_0 += 16;
+			P_1 += 16;
+		}
+		if ((P_2 & 8) != 0)
+		{
+			*(int*)P_0 = *(int*)P_1;
+			((int*)P_0)[1] = ((int*)P_1)[1];
+			P_0 += 8;
+			P_1 += 8;
+		}
+		if ((P_2 & 4) != 0)
+		{
+			*(int*)P_0 = *(int*)P_1;
+			P_0 += 4;
+			P_1 += 4;
+		}
+		if ((P_2 & 2) != 0)
+		{
+			*(short*)P_0 = *(short*)P_1;
+			P_0 += 2;
+			P_1 += 2;
+		}
+		if ((P_2 & 1) != 0)
+		{
+			*P_0 = *P_1;
+		}
+	}
+
+	private unsafe static void RUpwMUpdYqddiedRhZepvXsACjCJA(byte* P_0, byte* P_1, ulong P_2)
+	{
+		if ((ulong)((long)P_0 - (long)P_1) < P_2)
+		{
+			throw new Exception("Overlapping buffers not supported!");
+		}
+		ulong num = P_2;
+		if (num <= 16)
+		{
+			switch ((uint)num)
+			{
+			case 0u:
+				return;
+			case 1u:
+				*P_0 = *P_1;
+				return;
+			case 2u:
+				*(short*)P_0 = *(short*)P_1;
+				return;
+			case 3u:
+				*(short*)P_0 = *(short*)P_1;
+				P_0[2] = P_1[2];
+				return;
+			case 4u:
+				*(int*)P_0 = *(int*)P_1;
+				return;
+			case 5u:
+				*(int*)P_0 = *(int*)P_1;
+				P_0[4] = P_1[4];
+				return;
+			case 6u:
+				*(int*)P_0 = *(int*)P_1;
+				((short*)P_0)[2] = ((short*)P_1)[2];
+				return;
+			case 7u:
+				*(int*)P_0 = *(int*)P_1;
+				((short*)P_0)[2] = ((short*)P_1)[2];
+				P_0[6] = P_1[6];
+				return;
+			case 8u:
+				*(long*)P_0 = *(long*)P_1;
+				return;
+			case 9u:
+				*(long*)P_0 = *(long*)P_1;
+				P_0[8] = P_1[8];
+				return;
+			case 10u:
+				*(long*)P_0 = *(long*)P_1;
+				((short*)P_0)[4] = ((short*)P_1)[4];
+				return;
+			case 11u:
+				*(long*)P_0 = *(long*)P_1;
+				((short*)P_0)[4] = ((short*)P_1)[4];
+				P_0[10] = P_1[10];
+				return;
+			case 12u:
+				*(long*)P_0 = *(long*)P_1;
+				((int*)P_0)[2] = ((int*)P_1)[2];
+				return;
+			case 13u:
+				*(long*)P_0 = *(long*)P_1;
+				((int*)P_0)[2] = ((int*)P_1)[2];
+				P_0[12] = P_1[12];
+				return;
+			case 14u:
+				*(long*)P_0 = *(long*)P_1;
+				((int*)P_0)[2] = ((int*)P_1)[2];
+				((short*)P_0)[6] = ((short*)P_1)[6];
+				return;
+			case 15u:
+				*(long*)P_0 = *(long*)P_1;
+				((int*)P_0)[2] = ((int*)P_1)[2];
+				((short*)P_0)[6] = ((short*)P_1)[6];
+				P_0[14] = P_1[14];
+				return;
+			case 16u:
+				*(long*)P_0 = *(long*)P_1;
+				((long*)P_0)[1] = ((long*)P_1)[1];
+				return;
+			}
+		}
+		if (((int)P_0 & 3) != 0)
+		{
+			if (((int)P_0 & 1) != 0)
+			{
+				*P_0 = *P_1;
+				P_1++;
+				P_0++;
+				P_2--;
+				if (((int)P_0 & 2) == 0)
+				{
+					goto IL_0194;
+				}
+			}
+			*(short*)P_0 = *(short*)P_1;
+			P_1 += 2;
+			P_0 += 2;
+			P_2 -= 2;
+		}
+		goto IL_0194;
+		IL_0194:
+		if (((int)P_0 & 4) != 0)
+		{
+			*(int*)P_0 = *(int*)P_1;
+			P_1 += 4;
+			P_0 += 4;
+			P_2 -= 4;
+		}
+		for (ulong num2 = P_2 / 16; num2 != 0; num2--)
+		{
+			*(long*)P_0 = *(long*)P_1;
+			((long*)P_0)[1] = ((long*)P_1)[1];
+			P_0 += 16;
+			P_1 += 16;
+		}
+		if ((P_2 & 8) != 0L)
+		{
+			*(long*)P_0 = *(long*)P_1;
+			P_0 += 8;
+			P_1 += 8;
+		}
+		if ((P_2 & 4) != 0L)
+		{
+			*(int*)P_0 = *(int*)P_1;
+			P_0 += 4;
+			P_1 += 4;
+		}
+		if ((P_2 & 2) != 0L)
+		{
+			*(short*)P_0 = *(short*)P_1;
+			P_0 += 2;
+			P_1 += 2;
+		}
+		if ((P_2 & 1) != 0L)
+		{
+			*P_0 = *P_1;
+		}
+	}
+
+	public unsafe static bool NyfaVQAUWOlhoNLqqrnFuAjfaNfr(byte* P_0, byte* P_1, int P_2, int P_3, int P_4)
+	{
+		if (P_0 == null)
+		{
+			throw new ArgumentNullException("source");
+		}
+		if (P_1 == null)
+		{
+			throw new ArgumentNullException("destination");
+		}
+		if (P_2 < 0 || P_3 < 0 || P_4 < 0)
+		{
+			throw new Exception("Index and bytesToCopy must be non-negative!");
+		}
+		checked
+		{
+			if (SystemInfo.is64Bit)
+			{
+				RUpwMUpdYqddiedRhZepvXsACjCJA(P_1 + P_3, P_0 + P_2, (ulong)P_4);
+			}
+			else
+			{
+				CquAaYWWwCPczwkarFNaITnxLldSA(P_1 + P_3, P_0 + P_2, (uint)P_4);
+			}
+			return true;
+		}
+	}
+
+	public unsafe static bool LEjKwjYDTbLzDuGoKHJZgXaHvkRP(byte* P_0, byte* P_1, int P_2, int P_3, int P_4)
+	{
+		checked
+		{
+			if (SystemInfo.is64Bit)
+			{
+				RUpwMUpdYqddiedRhZepvXsACjCJA(P_1 + P_3, P_0 + P_2, (ulong)P_4);
+			}
+			else
+			{
+				CquAaYWWwCPczwkarFNaITnxLldSA(P_1 + P_3, P_0 + P_2, (uint)P_4);
+			}
+			return true;
+		}
+	}
+
+	public unsafe static void oZggRQgOfULUnGHOdGGtmCQIzwaVe(byte* P_0, int P_1)
+	{
+		if (P_0 == null)
+		{
+			throw new ArgumentNullException("buffer");
+		}
+		if (P_1 >= 8)
+		{
+			int num = P_1 / 8 * 8;
+			for (int i = 0; i < num; i += 8)
+			{
+				*(long*)(P_0 + i) = 0L;
+			}
+			for (int j = num; j < P_1; j++)
+			{
+				P_0[j] = 0;
+			}
+		}
+		else
+		{
+			for (int k = 0; k < P_1; k++)
+			{
+				P_0[k] = 0;
+			}
+		}
+	}
+}

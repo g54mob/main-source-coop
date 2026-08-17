@@ -1,0 +1,576 @@
+using System.Collections.Generic;
+using CW.Common;
+using PaintCore;
+using UnityEngine;
+using UnityEngine.Serialization;
+
+namespace PaintIn3D
+{
+	[HelpURL("https://carloswilkes.com/Documentation/PaintIn3D#CwPaintDecal")]
+	[AddComponentMenu("CW/Paint Core/Hit/CW Paint Decal")]
+	public class CwPaintDecal : MonoBehaviour, IHitPoint, IHit, IHitLine, IHitTriangle, IHitQuad, IHitCoord
+	{
+		[SerializeField]
+		private LayerMask layers = -1;
+
+		[SerializeField]
+		private CwPaintableMeshAtlas targetModel;
+
+		[SerializeField]
+		private CwGroup group;
+
+		[SerializeField]
+		private CwPaintableTexture targetTexture;
+
+		[SerializeField]
+		private CwBlendMode blendMode = CwBlendMode.AlphaBlend(Vector4.one);
+
+		[SerializeField]
+		private Texture texture;
+
+		[SerializeField]
+		private Texture shape;
+
+		[SerializeField]
+		private CwChannel shapeChannel = CwChannel.Alpha;
+
+		[SerializeField]
+		private Color color = Color.white;
+
+		[Range(0f, 1f)]
+		[SerializeField]
+		private float opacity = 1f;
+
+		[Range(-180f, 180f)]
+		[SerializeField]
+		private float angle;
+
+		[SerializeField]
+		private Vector3 scale = Vector3.one;
+
+		[SerializeField]
+		private float radius = 0.1f;
+
+		[SerializeField]
+		private float hardness = 3f;
+
+		[SerializeField]
+		[Range(0f, 1f)]
+		private float wrapping = 1f;
+
+		[Range(0f, 2f)]
+		[SerializeField]
+		private float normalFront = 1f;
+
+		[Range(0f, 2f)]
+		[SerializeField]
+		private float normalBack;
+
+		[Range(0.001f, 0.5f)]
+		[SerializeField]
+		private float normalFade = 0.01f;
+
+		[SerializeField]
+		private Texture tileTexture;
+
+		[SerializeField]
+		private Transform tileTransform;
+
+		[FormerlySerializedAs("tileBlend")]
+		[Range(0f, 1f)]
+		[SerializeField]
+		private float tileOpacity = 1f;
+
+		[Range(1f, 200f)]
+		[SerializeField]
+		private float tileTransition = 4f;
+
+		[SerializeField]
+		private bool findMask = true;
+
+		[SerializeField]
+		private bool findDepthMask = true;
+
+		[SerializeField]
+		private CwModifierList modifiers;
+
+		public LayerMask Layers
+		{
+			get
+			{
+				return layers;
+			}
+			set
+			{
+				layers = value;
+			}
+		}
+
+		public CwPaintableMeshAtlas TargetModel
+		{
+			get
+			{
+				return targetModel;
+			}
+			set
+			{
+				targetModel = value;
+			}
+		}
+
+		public CwGroup Group
+		{
+			get
+			{
+				return group;
+			}
+			set
+			{
+				group = value;
+			}
+		}
+
+		public CwPaintableTexture TargetTexture
+		{
+			get
+			{
+				return targetTexture;
+			}
+			set
+			{
+				targetTexture = value;
+			}
+		}
+
+		public CwBlendMode BlendMode
+		{
+			get
+			{
+				return blendMode;
+			}
+			set
+			{
+				blendMode = value;
+			}
+		}
+
+		public Texture Texture
+		{
+			get
+			{
+				return texture;
+			}
+			set
+			{
+				texture = value;
+			}
+		}
+
+		public Texture Shape
+		{
+			get
+			{
+				return shape;
+			}
+			set
+			{
+				shape = value;
+			}
+		}
+
+		public CwChannel ShapeChannel
+		{
+			get
+			{
+				return shapeChannel;
+			}
+			set
+			{
+				shapeChannel = value;
+			}
+		}
+
+		public Color Color
+		{
+			get
+			{
+				return color;
+			}
+			set
+			{
+				color = value;
+			}
+		}
+
+		public float Opacity
+		{
+			get
+			{
+				return opacity;
+			}
+			set
+			{
+				opacity = value;
+			}
+		}
+
+		public float Angle
+		{
+			get
+			{
+				return angle;
+			}
+			set
+			{
+				angle = value;
+			}
+		}
+
+		public Vector3 Scale
+		{
+			get
+			{
+				return scale;
+			}
+			set
+			{
+				scale = value;
+			}
+		}
+
+		public float Radius
+		{
+			get
+			{
+				return radius;
+			}
+			set
+			{
+				radius = value;
+			}
+		}
+
+		public float Hardness
+		{
+			get
+			{
+				return hardness;
+			}
+			set
+			{
+				hardness = value;
+			}
+		}
+
+		public float Wrapping
+		{
+			get
+			{
+				return wrapping;
+			}
+			set
+			{
+				wrapping = value;
+			}
+		}
+
+		public float NormalFront
+		{
+			get
+			{
+				return normalFront;
+			}
+			set
+			{
+				normalFront = value;
+			}
+		}
+
+		public float NormalBack
+		{
+			get
+			{
+				return normalBack;
+			}
+			set
+			{
+				normalBack = value;
+			}
+		}
+
+		public float NormalFade
+		{
+			get
+			{
+				return normalFade;
+			}
+			set
+			{
+				normalFade = value;
+			}
+		}
+
+		public Texture TileTexture
+		{
+			get
+			{
+				return tileTexture;
+			}
+			set
+			{
+				tileTexture = value;
+			}
+		}
+
+		public Transform TileTransform
+		{
+			get
+			{
+				return tileTransform;
+			}
+			set
+			{
+				tileTransform = value;
+			}
+		}
+
+		public float TileOpacity
+		{
+			get
+			{
+				return tileOpacity;
+			}
+			set
+			{
+				tileOpacity = value;
+			}
+		}
+
+		public float TileTransition
+		{
+			get
+			{
+				return tileTransition;
+			}
+			set
+			{
+				tileTransition = value;
+			}
+		}
+
+		public bool FindMask
+		{
+			get
+			{
+				return findMask;
+			}
+			set
+			{
+				findMask = value;
+			}
+		}
+
+		public bool FindDepthMask
+		{
+			get
+			{
+				return findDepthMask;
+			}
+			set
+			{
+				findDepthMask = value;
+			}
+		}
+
+		public CwModifierList Modifiers
+		{
+			get
+			{
+				if (modifiers == null)
+				{
+					modifiers = new CwModifierList();
+				}
+				return modifiers;
+			}
+		}
+
+		[ContextMenu("Flip Horizontal")]
+		public void FlipHorizontal()
+		{
+			scale.x = 0f - scale.x;
+		}
+
+		[ContextMenu("Flip Vertical")]
+		public void FlipVertical()
+		{
+			scale.y = 0f - scale.y;
+		}
+
+		public void IncrementAngle(float degrees)
+		{
+			angle = Mathf.Repeat(angle + 180f + degrees, 360f) - 180f;
+		}
+
+		public void MultiplyOpacity(float multiplier)
+		{
+			opacity = Mathf.Clamp01(opacity * multiplier);
+		}
+
+		public void IncrementOpacity(float delta)
+		{
+			opacity = Mathf.Clamp01(opacity + delta);
+		}
+
+		public void MultiplyRadius(float multiplier)
+		{
+			radius *= multiplier;
+		}
+
+		public void IncrementRadius(float delta)
+		{
+			radius += delta;
+		}
+
+		public void MultiplyScale(float multiplier)
+		{
+			scale *= multiplier;
+		}
+
+		public void IncrementScale(float multiplier)
+		{
+			scale += Vector3.one * multiplier;
+		}
+
+		public void HandleHitPoint(bool preview, int priority, float pressure, int seed, Vector3 position, Quaternion rotation)
+		{
+			if (modifiers != null && modifiers.Count > 0)
+			{
+				CwHelper.BeginSeed(seed);
+				modifiers.ModifyPosition(ref position, preview, pressure);
+				CwHelper.EndSeed();
+			}
+			CwCommandDecal.Instance.SetState(preview, priority);
+			CwCommandDecal.Instance.SetLocation(position);
+			float num = PaintCore.CwCommon.GetRadius(HandleHitCommon(preview, pressure, seed, rotation));
+			Vector3 vector = position;
+			HandleMaskCommon(vector);
+			CwPaintableManager.SubmitAll(CwCommandDecal.Instance, vector, num, layers, group, targetModel, targetTexture);
+		}
+
+		public void HandleHitLine(bool preview, int priority, float pressure, int seed, Vector3 position, Vector3 endPosition, Quaternion rotation, bool clip)
+		{
+			CwCommandDecal.Instance.SetState(preview, priority);
+			CwCommandDecal.Instance.SetLocation(position, endPosition, in3D: true, clip);
+			float num = PaintCore.CwCommon.GetRadius(HandleHitCommon(preview, pressure, seed, rotation), position, endPosition);
+			Vector3 position2 = PaintCore.CwCommon.GetPosition(position, endPosition);
+			HandleMaskCommon(position2);
+			CwPaintableManager.SubmitAll(CwCommandDecal.Instance, position2, num, layers, group, targetModel, targetTexture);
+		}
+
+		public void HandleHitTriangle(bool preview, int priority, float pressure, int seed, Vector3 positionA, Vector3 positionB, Vector3 positionC, Quaternion rotation)
+		{
+			CwCommandDecal.Instance.SetState(preview, priority);
+			CwCommandDecal.Instance.SetLocation(positionA, positionB, positionC);
+			float num = PaintCore.CwCommon.GetRadius(HandleHitCommon(preview, pressure, seed, rotation), positionA, positionB, positionC);
+			Vector3 position = PaintCore.CwCommon.GetPosition(positionA, positionB, positionC);
+			HandleMaskCommon(position);
+			CwPaintableManager.SubmitAll(CwCommandDecal.Instance, position, num, layers, group, targetModel, targetTexture);
+		}
+
+		public void HandleHitQuad(bool preview, int priority, float pressure, int seed, Vector3 position, Vector3 endPosition, Vector3 position2, Vector3 endPosition2, Quaternion rotation, bool clip)
+		{
+			CwCommandDecal.Instance.SetState(preview, priority);
+			CwCommandDecal.Instance.SetLocation(position, endPosition, position2, endPosition2, in3D: true, clip);
+			float num = PaintCore.CwCommon.GetRadius(HandleHitCommon(preview, pressure, seed, rotation), position, endPosition, position2, endPosition2);
+			Vector3 position3 = PaintCore.CwCommon.GetPosition(position, endPosition, position2, endPosition2);
+			HandleMaskCommon(position3);
+			CwPaintableManager.SubmitAll(CwCommandDecal.Instance, position3, num, layers, group, targetModel, targetTexture);
+		}
+
+		public void HandleHitCoord(bool preview, int priority, float pressure, int seed, CwHit hit, Quaternion rotation)
+		{
+			CwPaintableMeshAtlas component = hit.Transform.GetComponent<CwPaintableMeshAtlas>();
+			if (!(component != null))
+			{
+				return;
+			}
+			List<CwPaintableTexture> list = component.FindPaintableTextures(group);
+			for (int num = list.Count - 1; num >= 0; num--)
+			{
+				CwPaintableTexture cwPaintableTexture = list[num];
+				Vector2 vector = cwPaintableTexture.GetCoord(ref hit);
+				if (modifiers != null && modifiers.Count > 0)
+				{
+					Vector3 position = vector;
+					CwHelper.BeginSeed(seed);
+					modifiers.ModifyPosition(ref position, preview, pressure);
+					CwHelper.EndSeed();
+					vector = position;
+				}
+				CwCommandDecal.Instance.SetState(preview, priority);
+				CwCommandDecal.Instance.SetLocation(vector, in3D: false);
+				HandleHitCommon(preview, pressure, seed, rotation);
+				CwCommandDecal.Instance.ClearMask();
+				CwCommandDecal.Instance.ApplyAspect(cwPaintableTexture.Current);
+				CwPaintableManager.Submit(CwCommandDecal.Instance, component, cwPaintableTexture);
+			}
+		}
+
+		private Vector3 HandleHitCommon(bool preview, float pressure, int seed, Quaternion rotation)
+		{
+			float num = opacity;
+			float num2 = radius;
+			Vector3 vector = scale;
+			float num3 = hardness;
+			Color color = this.color;
+			float num4 = angle;
+			Texture textureB = texture;
+			Matrix4x4 tileMatrix = ((tileTransform != null) ? tileTransform.localToWorldMatrix : Matrix4x4.identity);
+			if (modifiers != null && modifiers.Count > 0)
+			{
+				CwHelper.BeginSeed(seed);
+				modifiers.ModifyColor(ref color, preview, pressure);
+				modifiers.ModifyAngle(ref num4, preview, pressure);
+				modifiers.ModifyOpacity(ref num, preview, pressure);
+				modifiers.ModifyRadius(ref num2, preview, pressure);
+				modifiers.ModifyScale(ref vector, preview, pressure);
+				modifiers.ModifyHardness(ref num3, preview, pressure);
+				modifiers.ModifyTexture(ref textureB, preview, pressure);
+				CwHelper.EndSeed();
+			}
+			float aspect = PaintCore.CwCommon.GetAspect(shape, textureB);
+			Vector3 vector2 = PaintCore.CwCommon.ScaleAspect(vector * num2, aspect);
+			CwCommandDecal.Instance.SetShape(rotation, vector2, num4);
+			CwCommandDecal.Instance.SetMaterial(blendMode, textureB, shape, shapeChannel, num3, wrapping, normalBack, normalFront, normalFade, color, num, tileTexture, tileMatrix, tileOpacity, tileTransition);
+			return vector2;
+		}
+
+		private void HandleMaskCommon(Vector3 worldPosition)
+		{
+			if (findMask)
+			{
+				CwMask cwMask = CwMask.Find(worldPosition, layers);
+				if (cwMask != null)
+				{
+					CwCommandDecal.Instance.SetMask(cwMask.Matrix, cwMask.Texture, cwMask.Channel, cwMask.Invert, cwMask.Stretch);
+				}
+				else
+				{
+					CwCommandDecal.Instance.ClearMask();
+				}
+			}
+			else
+			{
+				CwCommandDecal.Instance.ClearMask();
+			}
+			if (findDepthMask)
+			{
+				CwCommandDecal.Instance.DepthMask = CwRenderDepth.Find();
+			}
+			else
+			{
+				CwCommandDecal.Instance.DepthMask = null;
+			}
+		}
+	}
+}

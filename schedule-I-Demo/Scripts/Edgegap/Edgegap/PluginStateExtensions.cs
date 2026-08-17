@@ -1,0 +1,39 @@
+namespace Edgegap
+{
+	public static class PluginStateExtensions
+	{
+		public static bool CanConnect(this ToolState currentState)
+		{
+			return currentState == ToolState.Disconnected;
+		}
+
+		public static bool CanDisconnect(this ToolState currentState)
+		{
+			return currentState == ToolState.Connected;
+		}
+
+		public static bool CanStartDeployment(this ToolState currentState)
+		{
+			return currentState == ToolState.Connected;
+		}
+
+		public static bool CanStopDeployment(this ToolState currentState)
+		{
+			return currentState == ToolState.DeploymentRunning;
+		}
+
+		public static bool CanEditConnectionInfo(this ToolState currentState)
+		{
+			return currentState.CanConnect();
+		}
+
+		public static bool HasActiveDeployment(this ToolState currentState)
+		{
+			if (currentState != ToolState.ProcessingDeployment)
+			{
+				return currentState == ToolState.DeploymentRunning;
+			}
+			return true;
+		}
+	}
+}
