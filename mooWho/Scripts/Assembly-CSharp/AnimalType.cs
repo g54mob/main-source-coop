@@ -1,0 +1,26 @@
+public enum AnimalType
+{
+	None = 0,
+	Cow = 1,
+	Horse = 2,
+	Pig = 3,
+	Sheep = 4,
+	Chicken = 5,
+	Duck = 6,
+	Chick = 7,
+	Rooster = 8,
+	Wolf = 9,
+	Raccoon = 10,
+	Dog = 11,
+	Rabbit = 12,
+	Goat = 13,
+	Lion = 14,
+	Giraffe = 15,
+	Panda = 16,
+	Gorilla = 17,
+	Deer = 18,
+	Cat = 19,
+	Bear = 20,
+	Fox = 21,
+	Bull = 22
+}
