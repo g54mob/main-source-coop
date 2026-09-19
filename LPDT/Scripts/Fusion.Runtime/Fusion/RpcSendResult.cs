@@ -1,0 +1,26 @@
+using System;
+using System.Text;
+
+namespace Fusion
+{
+	[Serializable]
+	[Obsolete]
+	public struct RpcSendResult
+	{
+		public RpcSendMessageResult Result;
+
+		public int MessageSize;
+
+		public override readonly string ToString()
+		{
+			StringBuilder stringBuilder = new StringBuilder();
+			stringBuilder.Append("[");
+			stringBuilder.Append(Result.ToString());
+			stringBuilder.Append(", Size: ");
+			stringBuilder.Append(MessageSize);
+			stringBuilder.Append("}");
+			stringBuilder.Append("]");
+			return stringBuilder.ToString();
+		}
+	}
+}

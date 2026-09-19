@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Database.Usage.Configurations</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="DatabaseModule.Core">
+      <HintPath>..\..\Assemblies\DatabaseModule.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvConverterModule.Core">
+      <HintPath>..\..\Assemblies\CsvConverterModule.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SerializableDictionary">
+      <HintPath>..\..\Assemblies\SerializableDictionary.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Sheets.v4">
+      <HintPath>..\..\Assemblies\Google.Apis.Sheets.v4.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

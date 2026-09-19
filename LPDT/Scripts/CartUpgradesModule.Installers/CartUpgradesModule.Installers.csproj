@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>CartUpgradesModule.Installers</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="CartUpgradesModule.Core">
+      <HintPath>..\..\Assemblies\CartUpgradesModule.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CartUpgradesModule.Systems">
+      <HintPath>..\..\Assemblies\CartUpgradesModule.Systems.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,130 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>LineArmModule</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="NetworkInputModule">
+      <HintPath>..\..\Assemblies\NetworkInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LineArmModule.Data">
+      <HintPath>..\..\Assemblies\LineArmModule.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\..\Assemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="MovementModule">
+      <HintPath>..\..\Assemblies\MovementModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CameraModel">
+      <HintPath>..\..\Assemblies\CameraModel.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GrabModule">
+      <HintPath>..\..\Assemblies\GrabModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemsModule">
+      <HintPath>..\..\Assemblies\ItemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemDamageModule">
+      <HintPath>..\..\Assemblies\ItemDamageModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerStatesModule">
+      <HintPath>..\..\Assemblies\PlayerStatesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="HeavyItemData">
+      <HintPath>..\..\Assemblies\HeavyItemData.dll</HintPath>
+    </Reference>
+    <Reference Include="StatsModule.Realization">
+      <HintPath>..\..\Assemblies\StatsModule.Realization.dll</HintPath>
+    </Reference>
+    <Reference Include="GameplayEvents">
+      <HintPath>..\..\Assemblies\GameplayEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="SceneTransitionsModule">
+      <HintPath>..\..\Assemblies\SceneTransitionsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerSpawnerModule">
+      <HintPath>..\..\Assemblies\PlayerSpawnerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="Input">
+      <HintPath>..\..\Assemblies\Input.dll</HintPath>
+    </Reference>
+    <Reference Include="SettingsMenuModule.Data">
+      <HintPath>..\..\Assemblies\SettingsMenuModule.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="RagdollModule">
+      <HintPath>..\..\Assemblies\RagdollModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CollectingModule">
+      <HintPath>..\..\Assemblies\CollectingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityStatsModule">
+      <HintPath>..\..\Assemblies\EntityStatsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MVPWindowsUnityUIArchitectureModule">
+      <HintPath>..\..\Assemblies\MVPWindowsUnityUIArchitectureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Common">
+      <HintPath>..\..\Assemblies\Fusion.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SessionCleanup">
+      <HintPath>..\..\Assemblies\SessionCleanup.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="MagnetModule">
+      <HintPath>..\..\Assemblies\MagnetModule.dll</HintPath>
+    </Reference>
+    <Reference Include="InputModule.Core">
+      <HintPath>..\..\Assemblies\InputModule.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SerializableDictionary">
+      <HintPath>..\..\Assemblies\SerializableDictionary.dll</HintPath>
+    </Reference>
+    <Reference Include="InteractModule">
+      <HintPath>..\..\Assemblies\InteractModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Log">
+      <HintPath>..\..\Assemblies\Fusion.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="EventBusModule">
+      <HintPath>..\..\Assemblies\EventBusModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Assemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

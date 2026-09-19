@@ -1,0 +1,100 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>AnalyticsSystems</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="GameJournaling">
+      <HintPath>..\..\Assemblies\GameJournaling.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsMarkService">
+      <HintPath>..\..\Assemblies\AnalyticsMarkService.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsData">
+      <HintPath>..\..\Assemblies\AnalyticsData.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsModuleCore">
+      <HintPath>..\..\Assemblies\AnalyticsModuleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="SavingModule">
+      <HintPath>..\..\Assemblies\SavingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="AIModule">
+      <HintPath>..\..\Assemblies\AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemyStatHealth">
+      <HintPath>..\..\Assemblies\EnemyStatHealth.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelModule">
+      <HintPath>..\..\Assemblies\LevelModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemyData">
+      <HintPath>..\..\Assemblies\EnemyData.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerStatesModule">
+      <HintPath>..\..\Assemblies\PlayerStatesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DamageableTrackModule">
+      <HintPath>..\..\Assemblies\DamageableTrackModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DisconnectHandlerData">
+      <HintPath>..\..\Assemblies\DisconnectHandlerData.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkServices">
+      <HintPath>..\..\Assemblies\NetworkServices.dll</HintPath>
+    </Reference>
+    <Reference Include="StateMachinesModule">
+      <HintPath>..\..\Assemblies\StateMachinesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MainMenuModule">
+      <HintPath>..\..\Assemblies\MainMenuModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MovedToBeachLocal">
+      <HintPath>..\..\Assemblies\MovedToBeachLocal.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelGatesData">
+      <HintPath>..\..\Assemblies\LevelGatesData.dll</HintPath>
+    </Reference>
+    <Reference Include="StoreModule">
+      <HintPath>..\..\Assemblies\StoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="SessionCleanup">
+      <HintPath>..\..\Assemblies\SessionCleanup.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GameAnalytics.Plugins">
+      <HintPath>..\..\Assemblies\GameAnalytics.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomNetworkEventsModule">
+      <HintPath>..\..\Assemblies\CustomNetworkEventsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkedModelCodegen">
+      <HintPath>..\..\Assemblies\NetworkedModelCodegen.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsModuleExtensions">
+      <HintPath>..\..\Assemblies\AnalyticsModuleExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="EventBusModule">
+      <HintPath>..\..\Assemblies\EventBusModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

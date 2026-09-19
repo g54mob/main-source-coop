@@ -1,0 +1,94 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>SessionManagement.Runtime</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkedModelCodegen">
+      <HintPath>..\..\Assemblies\NetworkedModelCodegen.dll</HintPath>
+    </Reference>
+    <Reference Include="DisconnectHandlerData">
+      <HintPath>..\..\Assemblies\DisconnectHandlerData.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkServices">
+      <HintPath>..\..\Assemblies\NetworkServices.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkInputModule">
+      <HintPath>..\..\Assemblies\NetworkInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MovementModule">
+      <HintPath>..\..\Assemblies\MovementModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CameraModel">
+      <HintPath>..\..\Assemblies\CameraModel.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerStatesModule">
+      <HintPath>..\..\Assemblies\PlayerStatesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkedModelRuntime">
+      <HintPath>..\..\Assemblies\NetworkedModelRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="MouseVisibilityModule">
+      <HintPath>..\..\Assemblies\MouseVisibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerSpawnerModule">
+      <HintPath>..\..\Assemblies\PlayerSpawnerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="WeatherModule.Contracts">
+      <HintPath>..\..\Assemblies\WeatherModule.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsModuleCore">
+      <HintPath>..\..\Assemblies\AnalyticsModuleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="LineArmModule">
+      <HintPath>..\..\Assemblies\LineArmModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GrabModule">
+      <HintPath>..\..\Assemblies\GrabModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DamageableTrackModule">
+      <HintPath>..\..\Assemblies\DamageableTrackModule.dll</HintPath>
+    </Reference>
+    <Reference Include="StrechArmsModule">
+      <HintPath>..\..\Assemblies\StrechArmsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerSkinModule">
+      <HintPath>..\..\Assemblies\PlayerSkinModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VoiceControlModule">
+      <HintPath>..\..\Assemblies\VoiceControlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="EventBusModule">
+      <HintPath>..\..\Assemblies\EventBusModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerSkinModule.VisibilityHandling">
+      <HintPath>..\..\Assemblies\PlayerSkinModule.VisibilityHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerGrabModule">
+      <HintPath>..\..\Assemblies\PlayerGrabModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

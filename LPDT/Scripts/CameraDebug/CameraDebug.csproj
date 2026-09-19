@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>CameraDebug</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="MVPWindowsUnityUIArchitectureModule">
+      <HintPath>..\..\Assemblies\MVPWindowsUnityUIArchitectureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CameraModel">
+      <HintPath>..\..\Assemblies\CameraModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="ViewSystemRealization">
+      <HintPath>..\..\Assemblies\ViewSystemRealization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,76 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>NetworkTelemetry</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="MessagePack">
+      <HintPath>..\..\Assemblies\MessagePack.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkServices">
+      <HintPath>..\..\Assemblies\NetworkServices.dll</HintPath>
+    </Reference>
+    <Reference Include="GameplayEvents">
+      <HintPath>..\..\Assemblies\GameplayEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerCustomization">
+      <HintPath>..\..\Assemblies\PlayerCustomization.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamModule.API">
+      <HintPath>..\..\Assemblies\SteamModule.API.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="MovementModule">
+      <HintPath>..\..\Assemblies\MovementModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AIModule">
+      <HintPath>..\..\Assemblies\AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonClient">
+      <HintPath>..\..\Assemblies\PhotonClient.dll</HintPath>
+    </Reference>
+    <Reference Include="MessagePack.Annotations">
+      <HintPath>..\..\Assemblies\MessagePack.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="DebugModule.ProjectMetaData">
+      <HintPath>..\..\Assemblies\DebugModule.ProjectMetaData.dll</HintPath>
+    </Reference>
+    <Reference Include="EventBusModule">
+      <HintPath>..\..\Assemblies\EventBusModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Sockets">
+      <HintPath>..\..\Assemblies\Fusion.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>..\..\Assemblies\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemyData">
+      <HintPath>..\..\Assemblies\EnemyData.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon.Realtime">
+      <HintPath>..\..\Assemblies\Photon.Realtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

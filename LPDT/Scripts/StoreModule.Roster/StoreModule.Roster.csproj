@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>StoreModule.Roster</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="SessionManagement.Runtime">
+      <HintPath>..\..\Assemblies\SessionManagement.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="StoreModule">
+      <HintPath>..\..\Assemblies\StoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="StoreModule.Networked">
+      <HintPath>..\..\Assemblies\StoreModule.Networked.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

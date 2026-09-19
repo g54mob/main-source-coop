@@ -1,0 +1,166 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>MainMenuModule</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamInviteModule">
+      <HintPath>..\..\Assemblies\SteamInviteModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamModule.API">
+      <HintPath>..\..\Assemblies\SteamModule.API.dll</HintPath>
+    </Reference>
+    <Reference Include="UINavigationModule">
+      <HintPath>..\..\Assemblies\UINavigationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UINavigationModuleRealization">
+      <HintPath>..\..\Assemblies\UINavigationModuleRealization.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAnimationsModule">
+      <HintPath>..\..\Assemblies\UIAnimationsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Assemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ViewSystemRealization">
+      <HintPath>..\..\Assemblies\ViewSystemRealization.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerCustomization">
+      <HintPath>..\..\Assemblies\PlayerCustomization.dll</HintPath>
+    </Reference>
+    <Reference Include="VoiceSpeakers">
+      <HintPath>..\..\Assemblies\VoiceSpeakers.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerItemViewModule">
+      <HintPath>..\..\Assemblies\PlayerItemViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MVPWindowsUnityUIArchitectureModule">
+      <HintPath>..\..\Assemblies\MVPWindowsUnityUIArchitectureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="StateMachinesModule">
+      <HintPath>..\..\Assemblies\StateMachinesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DisconnectHandlerData">
+      <HintPath>..\..\Assemblies\DisconnectHandlerData.dll</HintPath>
+    </Reference>
+    <Reference Include="GameUpdaterModule">
+      <HintPath>..\..\Assemblies\GameUpdaterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SceneTransitionsModule">
+      <HintPath>..\..\Assemblies\SceneTransitionsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SettingsMenu">
+      <HintPath>..\..\Assemblies\SettingsMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="Localization">
+      <HintPath>..\..\Assemblies\Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfirmExitModule">
+      <HintPath>..\..\Assemblies\ConfirmExitModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SavingModule">
+      <HintPath>..\..\Assemblies\SavingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkServices">
+      <HintPath>..\..\Assemblies\NetworkServices.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelModule">
+      <HintPath>..\..\Assemblies\LevelModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SessionManagement.Runtime">
+      <HintPath>..\..\Assemblies\SessionManagement.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="SettingsMenuModule.Data">
+      <HintPath>..\..\Assemblies\SettingsMenuModule.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsModuleCore">
+      <HintPath>..\..\Assemblies\AnalyticsModuleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="TutorialSteps.Data">
+      <HintPath>..\..\Assemblies\TutorialSteps.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="GameModeModule">
+      <HintPath>..\..\Assemblies\GameModeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsData">
+      <HintPath>..\..\Assemblies\AnalyticsData.dll</HintPath>
+    </Reference>
+    <Reference Include="ChineseDetectionData">
+      <HintPath>..\..\Assemblies\ChineseDetectionData.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Realtime">
+      <HintPath>..\..\Assemblies\Fusion.Realtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UINavigationModule.Components">
+      <HintPath>..\..\Assemblies\UINavigationModule.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="SerializableDictionary">
+      <HintPath>..\..\Assemblies\SerializableDictionary.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkInputModule">
+      <HintPath>..\..\Assemblies\NetworkInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ChineseDetectionCore">
+      <HintPath>..\..\Assemblies\ChineseDetectionCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Sockets">
+      <HintPath>..\..\Assemblies\Fusion.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>..\..\Assemblies\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomNetworkEventsModule">
+      <HintPath>..\..\Assemblies\CustomNetworkEventsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EventBusModule">
+      <HintPath>..\..\Assemblies\EventBusModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon.Realtime">
+      <HintPath>..\..\Assemblies\Photon.Realtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="DoTweenModule">
+      <HintPath>..\..\Assemblies\DoTweenModule.dll</HintPath>
+    </Reference>
+    <Reference Include="InputModule.Core">
+      <HintPath>..\..\Assemblies\InputModule.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

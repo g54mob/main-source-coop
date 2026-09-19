@@ -1,0 +1,36 @@
+using UnityEngine;
+
+namespace UnityHFSM
+{
+	public class Timer : ITimer
+	{
+		public float startTime;
+
+		public float Elapsed => Time.time - startTime;
+
+		public void Reset()
+		{
+			startTime = Time.time;
+		}
+
+		public static bool operator >(Timer timer, float duration)
+		{
+			return timer.Elapsed > duration;
+		}
+
+		public static bool operator <(Timer timer, float duration)
+		{
+			return timer.Elapsed < duration;
+		}
+
+		public static bool operator >=(Timer timer, float duration)
+		{
+			return timer.Elapsed >= duration;
+		}
+
+		public static bool operator <=(Timer timer, float duration)
+		{
+			return timer.Elapsed <= duration;
+		}
+	}
+}

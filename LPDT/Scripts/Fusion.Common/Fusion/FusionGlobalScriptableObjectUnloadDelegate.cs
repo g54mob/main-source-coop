@@ -1,0 +1,4 @@
+namespace Fusion
+{
+	public delegate void FusionGlobalScriptableObjectUnloadDelegate(FusionGlobalScriptableObject instance);
+}

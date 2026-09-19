@@ -1,0 +1,21 @@
+using System;
+
+namespace Obi
+{
+	[Serializable]
+	public class ObiNativeDFNodeList : ObiNativeList<DFNode>
+	{
+		public ObiNativeDFNodeList()
+		{
+		}
+
+		public ObiNativeDFNodeList(int capacity = 8, int alignment = 16)
+			: base(capacity, alignment)
+		{
+			for (int i = 0; i < capacity; i++)
+			{
+				base[i] = default(DFNode);
+			}
+		}
+	}
+}

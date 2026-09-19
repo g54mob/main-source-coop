@@ -1,0 +1,11 @@
+namespace FMOD
+{
+	public enum DSP_MULTIBAND_DYNAMICS_MODE_TYPE
+	{
+		DISABLED = 0,
+		COMPRESS_UP = 1,
+		COMPRESS_DOWN = 2,
+		EXPAND_UP = 3,
+		EXPAND_DOWN = 4
+	}
+}

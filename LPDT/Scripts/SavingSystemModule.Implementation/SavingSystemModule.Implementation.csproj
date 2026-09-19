@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>SavingSystemModule.Implementation</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="SavingSystemModule">
+      <HintPath>..\..\Assemblies\SavingSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonConvertorModule">
+      <HintPath>..\..\Assemblies\JsonConvertorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MockRealization">
+      <HintPath>..\..\Assemblies\MockRealization.dll</HintPath>
+    </Reference>
+    <Reference Include="XOREncriptionModule">
+      <HintPath>..\..\Assemblies\XOREncriptionModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

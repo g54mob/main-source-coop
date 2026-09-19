@@ -1,0 +1,63 @@
+using Features.AIModuleStateMachine.Scripts.Core.Contexts;
+using Features.AIModuleStateMachine.Scripts.Core.Systems.Setup;
+using Features.AIModuleStateMachine.Scripts.Enemies.RatsHoleEnemy.Settings;
+using Features.AIModuleStateMachine.Scripts.Enemies.RatsHoleEnemy.States;
+using Fusion;
+using Zenject;
+
+namespace Features.AIModuleStateMachine.Scripts.Enemies.RatsHoleEnemy.Systems
+{
+	[NetworkBehaviourWeaved(0)]
+	public class RatsHoleEnemyMoveSpeedSetupSystem : PerStateValueSetupSystemBase<RatsHoleEnemyStateId>
+	{
+		private RatsHoleEnemyContext _context;
+
+		private RatsHoleEnemyMovementSettings _movementSettings;
+
+		protected override float DefaultValue => _movementSettings.DefaultMoveSpeed;
+
+		[Inject]
+		private void InjectDependencies(RatsHoleEnemyContext context, RatsHoleEnemyMovementSettings movementSettings, ICurrentStateProvider<RatsHoleEnemyStateId> stateProvider)
+		{
+			_context = context;
+			_movementSettings = movementSettings;
+			SetStateProvider(stateProvider);
+		}
+
+		protected override bool TryGetValue(RatsHoleEnemyStateId stateId, out float value)
+		{
+			if (_movementSettings.MoveSpeeds.ContainsKey(stateId))
+			{
+				value = _movementSettings.MoveSpeeds[stateId];
+				return true;
+			}
+			value = 0f;
+			return false;
+		}
+
+		protected override void Apply(float value)
+		{
+			_context.SetMoveSpeed(value);
+			if (!(_context.NavMeshAgent == null))
+			{
+				_context.NavMeshAgent.speed = value;
+				if (_context.NavMeshAgent.isActiveAndEnabled && _context.NavMeshAgent.isOnNavMesh)
+				{
+					_context.NavMeshAgent.isStopped = value <= 0.01f;
+				}
+			}
+		}
+
+		[WeaverGenerated]
+		public override void CopyBackingFieldsToState(bool P_0)
+		{
+			base.CopyBackingFieldsToState(P_0);
+		}
+
+		[WeaverGenerated]
+		public override void CopyStateToBackingFields()
+		{
+			base.CopyStateToBackingFields();
+		}
+	}
+}

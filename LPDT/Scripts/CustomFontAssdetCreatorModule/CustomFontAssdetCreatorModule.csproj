@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>CustomFontAssdetCreatorModule</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Localization">
+      <HintPath>..\..\Assemblies\Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetLoaderServiceModule">
+      <HintPath>..\..\Assemblies\AssetLoaderServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Assemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="SerializableDictionary">
+      <HintPath>..\..\Assemblies\SerializableDictionary.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Assemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="ArabicSupportModule">
+      <HintPath>..\..\Assemblies\ArabicSupportModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

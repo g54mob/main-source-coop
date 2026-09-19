@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>UserReport.AutoReportModule.Di</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="UserReport.AutoReportModule.API">
+      <HintPath>..\..\Assemblies\UserReport.AutoReportModule.API.dll</HintPath>
+    </Reference>
+    <Reference Include="UserReportAutoReportModule.Internal">
+      <HintPath>..\..\Assemblies\UserReportAutoReportModule.Internal.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Fusion.Realtime</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Photon.Realtime">
+      <HintPath>..\..\Assemblies\Photon.Realtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonClient">
+      <HintPath>..\..\Assemblies\PhotonClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Common">
+      <HintPath>..\..\Assemblies\Fusion.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\Assemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Log">
+      <HintPath>..\..\Assemblies\Fusion.Log.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

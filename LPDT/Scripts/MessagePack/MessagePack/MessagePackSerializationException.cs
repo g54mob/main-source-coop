@@ -1,0 +1,35 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Runtime.Serialization;
+
+namespace MessagePack
+{
+	[Serializable]
+	public class MessagePackSerializationException : Exception
+	{
+		public MessagePackSerializationException()
+		{
+		}
+
+		public MessagePackSerializationException(string? message)
+			: base(message)
+		{
+		}
+
+		public MessagePackSerializationException(string? message, Exception? inner)
+			: base(message, inner)
+		{
+		}
+
+		protected MessagePackSerializationException(SerializationInfo info, StreamingContext context)
+			: base(info, context)
+		{
+		}
+
+		[DoesNotReturn]
+		internal static Exception ThrowUnexpectedNilWhileDeserializing<T>()
+		{
+			throw new MessagePackSerializationException("Unexpected nil encountered while deserializing " + typeof(T).FullName);
+		}
+	}
+}

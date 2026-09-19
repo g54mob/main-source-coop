@@ -1,0 +1,82 @@
+using Unity.Mathematics;
+
+namespace Obi
+{
+	public struct BurstAffineTransform
+	{
+		public float4 translation;
+
+		public float4 scale;
+
+		public quaternion rotation;
+
+		public BurstAffineTransform(float4 translation, quaternion rotation, float4 scale)
+		{
+			translation[3] = 0f;
+			scale[3] = 1f;
+			this.translation = translation;
+			this.rotation = rotation;
+			this.scale = scale;
+		}
+
+		public static BurstAffineTransform operator *(BurstAffineTransform a, BurstAffineTransform b)
+		{
+			return new BurstAffineTransform(a.TransformPoint(b.translation), math.mul(a.rotation, b.rotation), a.scale * b.scale);
+		}
+
+		public BurstAffineTransform Inverse()
+		{
+			return new BurstAffineTransform(new float4(math.rotate(math.conjugate(rotation), (translation / -scale).xyz), 0f), math.conjugate(rotation), 1f / scale);
+		}
+
+		public BurstAffineTransform Integrate(float4 linearVelocity, float4 angularVelocity, float dt)
+		{
+			return new BurstAffineTransform(BurstIntegration.IntegrateLinear(translation, linearVelocity, dt), BurstIntegration.IntegrateAngular(rotation, angularVelocity, dt), scale);
+		}
+
+		public BurstAffineTransform Interpolate(BurstAffineTransform other, float translationalMu, float rotationalMu, float scaleMu)
+		{
+			return new BurstAffineTransform(math.lerp(translation, other.translation, translationalMu), math.slerp(rotation, other.rotation, rotationalMu), math.lerp(scale, other.scale, scaleMu));
+		}
+
+		public float4 TransformPoint(float4 point)
+		{
+			return new float4(translation.xyz + math.rotate(rotation, (point * scale).xyz), 0f);
+		}
+
+		public float4 InverseTransformPoint(float4 point)
+		{
+			return new float4(math.rotate(math.conjugate(rotation), (point - translation).xyz) / scale.xyz, 0f);
+		}
+
+		public float4 TransformPointUnscaled(float4 point)
+		{
+			return new float4(translation.xyz + math.rotate(rotation, point.xyz), 0f);
+		}
+
+		public float4 InverseTransformPointUnscaled(float4 point)
+		{
+			return new float4(math.rotate(math.conjugate(rotation), (point - translation).xyz), 0f);
+		}
+
+		public float4 TransformDirection(float4 direction)
+		{
+			return new float4(math.rotate(rotation, direction.xyz), 0f);
+		}
+
+		public float4 InverseTransformDirection(float4 direction)
+		{
+			return new float4(math.rotate(math.conjugate(rotation), direction.xyz), 0f);
+		}
+
+		public float4 TransformVector(float4 vector)
+		{
+			return new float4(math.rotate(rotation, (vector * scale).xyz), 0f);
+		}
+
+		public float4 InverseTransformVector(float4 vector)
+		{
+			return new float4(math.rotate(math.conjugate(rotation), vector.xyz) / scale.xyz, 0f);
+		}
+	}
+}

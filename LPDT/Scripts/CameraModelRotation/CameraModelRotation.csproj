@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>CameraModelRotation</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="MovementModule">
+      <HintPath>..\..\Assemblies\MovementModule.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkInputModule">
+      <HintPath>..\..\Assemblies\NetworkInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="StatsModule.Realization">
+      <HintPath>..\..\Assemblies\StatsModule.Realization.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="CameraModel">
+      <HintPath>..\..\Assemblies\CameraModel.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Cinemachine">
+      <HintPath>..\..\Assemblies\Unity.Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityStatsModule">
+      <HintPath>..\..\Assemblies\EntityStatsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="InputModule.Core">
+      <HintPath>..\..\Assemblies\InputModule.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

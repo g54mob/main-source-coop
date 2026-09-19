@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>UserReportAutoReportModule.Internal</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UserReport.ReportService.Configurations">
+      <HintPath>..\..\Assemblies\UserReport.ReportService.Configurations.dll</HintPath>
+    </Reference>
+    <Reference Include="UserReport.Client">
+      <HintPath>..\..\Assemblies\UserReport.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="UserReport.AutoReportModule.API">
+      <HintPath>..\..\Assemblies\UserReport.AutoReportModule.API.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UserReport">
+      <HintPath>..\..\Assemblies\UserReport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

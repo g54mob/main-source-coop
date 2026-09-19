@@ -1,0 +1,82 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>LevelModule</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="SavingSystemModule">
+      <HintPath>..\..\Assemblies\SavingSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SavingModule">
+      <HintPath>..\..\Assemblies\SavingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemyData">
+      <HintPath>..\..\Assemblies\EnemyData.dll</HintPath>
+    </Reference>
+    <Reference Include="SynchronizedModels.Json">
+      <HintPath>..\..\Assemblies\SynchronizedModels.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SerializableDictionary">
+      <HintPath>..\..\Assemblies\SerializableDictionary.dll</HintPath>
+    </Reference>
+    <Reference Include="SceneManagement">
+      <HintPath>..\..\Assemblies\SceneManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="GamePauseModule">
+      <HintPath>..\..\Assemblies\GamePauseModule.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkServices">
+      <HintPath>..\..\Assemblies\NetworkServices.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerStatesModule">
+      <HintPath>..\..\Assemblies\PlayerStatesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="MovementModule">
+      <HintPath>..\..\Assemblies\MovementModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomNetworkEventsModule">
+      <HintPath>..\..\Assemblies\CustomNetworkEventsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SynchronizedModels.DataStreaming">
+      <HintPath>..\..\Assemblies\SynchronizedModels.DataStreaming.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Common">
+      <HintPath>..\..\Assemblies\Fusion.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>..\..\Assemblies\Unity.AI.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="EventBusModule">
+      <HintPath>..\..\Assemblies\EventBusModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerSpawnerModule">
+      <HintPath>..\..\Assemblies\PlayerSpawnerModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

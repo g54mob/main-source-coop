@@ -1,0 +1,100 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>MovementModule</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CameraModel">
+      <HintPath>..\..\Assemblies\CameraModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="RagdollModule">
+      <HintPath>..\..\Assemblies\RagdollModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GameplayEvents">
+      <HintPath>..\..\Assemblies\GameplayEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerCustomization">
+      <HintPath>..\..\Assemblies\PlayerCustomization.dll</HintPath>
+    </Reference>
+    <Reference Include="DeadPartsModuleData">
+      <HintPath>..\..\Assemblies\DeadPartsModuleData.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AnimationModule">
+      <HintPath>..\..\Assemblies\AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerSpawnerModule">
+      <HintPath>..\..\Assemblies\PlayerSpawnerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="HeavyItemData">
+      <HintPath>..\..\Assemblies\HeavyItemData.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkInputModule">
+      <HintPath>..\..\Assemblies\NetworkInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Input">
+      <HintPath>..\..\Assemblies\Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\..\Assemblies\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="StatsModule.Realization">
+      <HintPath>..\..\Assemblies\StatsModule.Realization.dll</HintPath>
+    </Reference>
+    <Reference Include="Obi">
+      <HintPath>..\..\Assemblies\Obi.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Addons.Physics">
+      <HintPath>..\..\Assemblies\Fusion.Addons.Physics.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityStatsModule">
+      <HintPath>..\..\Assemblies\EntityStatsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Common">
+      <HintPath>..\..\Assemblies\Fusion.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="EventBusModule">
+      <HintPath>..\..\Assemblies\EventBusModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SerializableDictionary">
+      <HintPath>..\..\Assemblies\SerializableDictionary.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Log">
+      <HintPath>..\..\Assemblies\Fusion.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="InputModule.Core">
+      <HintPath>..\..\Assemblies\InputModule.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PhysicsInteractionModule">
+      <HintPath>..\..\Assemblies\PhysicsInteractionModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

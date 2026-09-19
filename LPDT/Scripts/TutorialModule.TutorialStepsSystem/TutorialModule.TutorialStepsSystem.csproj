@@ -1,0 +1,145 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>TutorialModule.TutorialStepsSystem</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="TutorialSteps.Data">
+      <HintPath>..\..\Assemblies\TutorialSteps.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="CoroutineRunner">
+      <HintPath>..\..\Assemblies\CoroutineRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="DeviceModule">
+      <HintPath>..\..\Assemblies\DeviceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="TutorialModule.API">
+      <HintPath>..\..\Assemblies\TutorialModule.API.dll</HintPath>
+    </Reference>
+    <Reference Include="DisconnectHandlerData">
+      <HintPath>..\..\Assemblies\DisconnectHandlerData.dll</HintPath>
+    </Reference>
+    <Reference Include="SavingModule">
+      <HintPath>..\..\Assemblies\SavingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="TutorialModule.TutorialCheckpointSystem">
+      <HintPath>..\..\Assemblies\TutorialModule.TutorialCheckpointSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="DeviceModule.DeviceData">
+      <HintPath>..\..\Assemblies\DeviceModule.DeviceData.dll</HintPath>
+    </Reference>
+    <Reference Include="MVPWindowsUnityUIArchitectureModule">
+      <HintPath>..\..\Assemblies\MVPWindowsUnityUIArchitectureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GameUpdaterModule">
+      <HintPath>..\..\Assemblies\GameUpdaterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GuideModule">
+      <HintPath>..\..\Assemblies\GuideModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MovementModule">
+      <HintPath>..\..\Assemblies\MovementModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UITipsModule">
+      <HintPath>..\..\Assemblies\UITipsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerTutorialGuideEnemyStateMachine">
+      <HintPath>..\..\Assemblies\PlayerTutorialGuideEnemyStateMachine.dll</HintPath>
+    </Reference>
+    <Reference Include="StoreModule">
+      <HintPath>..\..\Assemblies\StoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="QuotaModule">
+      <HintPath>..\..\Assemblies\QuotaModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AIModule">
+      <HintPath>..\..\Assemblies\AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="ElPiratoDeTutorial">
+      <HintPath>..\..\Assemblies\ElPiratoDeTutorial.dll</HintPath>
+    </Reference>
+    <Reference Include="GrabModule">
+      <HintPath>..\..\Assemblies\GrabModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SerializableDictionary">
+      <HintPath>..\..\Assemblies\SerializableDictionary.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemSpawnerModule">
+      <HintPath>..\..\Assemblies\ItemSpawnerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CameraModel">
+      <HintPath>..\..\Assemblies\CameraModel.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="HingeModule">
+      <HintPath>..\..\Assemblies\HingeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="RumModule">
+      <HintPath>..\..\Assemblies\RumModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendedLogger">
+      <HintPath>..\..\Assemblies\ExtendedLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="DeadPartsModule">
+      <HintPath>..\..\Assemblies\DeadPartsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkedModelCodegen">
+      <HintPath>..\..\Assemblies\NetworkedModelCodegen.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelModule">
+      <HintPath>..\..\Assemblies\LevelModule.dll</HintPath>
+    </Reference>
+    <Reference Include="StatsModule.Realization">
+      <HintPath>..\..\Assemblies\StatsModule.Realization.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityStatsModule">
+      <HintPath>..\..\Assemblies\EntityStatsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemyStatHealth">
+      <HintPath>..\..\Assemblies\EnemyStatHealth.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemsModule">
+      <HintPath>..\..\Assemblies\ItemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="RumInteracteble">
+      <HintPath>..\..\Assemblies\RumInteracteble.dll</HintPath>
+    </Reference>
+    <Reference Include="InteractModule">
+      <HintPath>..\..\Assemblies\InteractModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemyData">
+      <HintPath>..\..\Assemblies\EnemyData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,70 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>CartCannonModule</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="CartUpgradesModule.Core">
+      <HintPath>..\..\Assemblies\CartUpgradesModule.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="TipsModule.Data">
+      <HintPath>..\..\Assemblies\TipsModule.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="ScreenShakeModule">
+      <HintPath>..\..\Assemblies\ScreenShakeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AudioServiceModule">
+      <HintPath>..\..\Assemblies\AudioServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="HingeModule">
+      <HintPath>..\..\Assemblies\HingeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GrabModule">
+      <HintPath>..\..\Assemblies\GrabModule.dll</HintPath>
+    </Reference>
+    <Reference Include="WeaponModule">
+      <HintPath>..\..\Assemblies\WeaponModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="FMODUnity">
+      <HintPath>..\..\Assemblies\FMODUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Cinemachine">
+      <HintPath>..\..\Assemblies\Unity.Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="InteractModule">
+      <HintPath>..\..\Assemblies\InteractModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Common">
+      <HintPath>..\..\Assemblies\Fusion.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Log">
+      <HintPath>..\..\Assemblies\Fusion.Log.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

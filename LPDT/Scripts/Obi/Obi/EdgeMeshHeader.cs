@@ -1,0 +1,27 @@
+namespace Obi
+{
+	public struct EdgeMeshHeader
+	{
+		public int firstNode;
+
+		public int nodeCount;
+
+		public int firstEdge;
+
+		public int edgeCount;
+
+		public int firstVertex;
+
+		public int vertexCount;
+
+		public EdgeMeshHeader(int firstNode, int nodeCount, int firstTriangle, int triangleCount, int firstVertex, int vertexCount)
+		{
+			this.firstNode = firstNode;
+			this.nodeCount = nodeCount;
+			firstEdge = firstTriangle;
+			edgeCount = triangleCount;
+			this.firstVertex = firstVertex;
+			this.vertexCount = vertexCount;
+		}
+	}
+}

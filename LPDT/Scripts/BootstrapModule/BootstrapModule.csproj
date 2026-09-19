@@ -1,0 +1,718 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>BootstrapModule</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SessionCleanup">
+      <HintPath>..\..\Assemblies\SessionCleanup.dll</HintPath>
+    </Reference>
+    <Reference Include="CameraModel">
+      <HintPath>..\..\Assemblies\CameraModel.dll</HintPath>
+    </Reference>
+    <Reference Include="QuotaModule">
+      <HintPath>..\..\Assemblies\QuotaModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SessionManagement.Runtime">
+      <HintPath>..\..\Assemblies\SessionManagement.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelTransition">
+      <HintPath>..\..\Assemblies\LevelTransition.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkServices">
+      <HintPath>..\..\Assemblies\NetworkServices.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerSpawnerModule">
+      <HintPath>..\..\Assemblies\PlayerSpawnerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetLoaderServiceModule">
+      <HintPath>..\..\Assemblies\AssetLoaderServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PositionMarkersModel">
+      <HintPath>..\..\Assemblies\PositionMarkersModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="LineArmModule">
+      <HintPath>..\..\Assemblies\LineArmModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MovementModule">
+      <HintPath>..\..\Assemblies\MovementModule.dll</HintPath>
+    </Reference>
+    <Reference Include="StatsModule.Realization">
+      <HintPath>..\..\Assemblies\StatsModule.Realization.dll</HintPath>
+    </Reference>
+    <Reference Include="NavigationModule">
+      <HintPath>..\..\Assemblies\NavigationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelModule">
+      <HintPath>..\..\Assemblies\LevelModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerStatesModule">
+      <HintPath>..\..\Assemblies\PlayerStatesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GameOverModule">
+      <HintPath>..\..\Assemblies\GameOverModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ViewSystemRealization">
+      <HintPath>..\..\Assemblies\ViewSystemRealization.dll</HintPath>
+    </Reference>
+    <Reference Include="StatisticWindow">
+      <HintPath>..\..\Assemblies\StatisticWindow.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkInputModule">
+      <HintPath>..\..\Assemblies\NetworkInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MVPWindowsUnityUIArchitectureModule">
+      <HintPath>..\..\Assemblies\MVPWindowsUnityUIArchitectureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SceneTransitionsModule">
+      <HintPath>..\..\Assemblies\SceneTransitionsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SettingsMenu">
+      <HintPath>..\..\Assemblies\SettingsMenu.dll</HintPath>
+    </Reference>
+    <Reference Include="TutorialSteps.Data">
+      <HintPath>..\..\Assemblies\TutorialSteps.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsModuleCore">
+      <HintPath>..\..\Assemblies\AnalyticsModuleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkedModelRuntime">
+      <HintPath>..\..\Assemblies\NetworkedModelRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsData">
+      <HintPath>..\..\Assemblies\AnalyticsData.dll</HintPath>
+    </Reference>
+    <Reference Include="AudioDevicesModule">
+      <HintPath>..\..\Assemblies\AudioDevicesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="StoreModule">
+      <HintPath>..\..\Assemblies\StoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\Assemblies\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="StateMachinesModule">
+      <HintPath>..\..\Assemblies\StateMachinesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VoiceControlModule">
+      <HintPath>..\..\Assemblies\VoiceControlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="BeachInteractableCommonModule">
+      <HintPath>..\..\Assemblies\BeachInteractableCommonModule.dll</HintPath>
+    </Reference>
+    <Reference Include="WeatherModule">
+      <HintPath>..\..\Assemblies\WeatherModule.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkRandomModule">
+      <HintPath>..\..\Assemblies\NetworkRandomModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SceneLoaderModule">
+      <HintPath>..\..\Assemblies\SceneLoaderModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SceneManagement">
+      <HintPath>..\..\Assemblies\SceneManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="SavingModule">
+      <HintPath>..\..\Assemblies\SavingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="RumModule">
+      <HintPath>..\..\Assemblies\RumModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DeadPartsModule">
+      <HintPath>..\..\Assemblies\DeadPartsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="TutorialModule.API">
+      <HintPath>..\..\Assemblies\TutorialModule.API.dll</HintPath>
+    </Reference>
+    <Reference Include="AIModule">
+      <HintPath>..\..\Assemblies\AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GrabModule">
+      <HintPath>..\..\Assemblies\GrabModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MonkeyPorterEnemyStateMachine">
+      <HintPath>..\..\Assemblies\MonkeyPorterEnemyStateMachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkedModelCodegen">
+      <HintPath>..\..\Assemblies\NetworkedModelCodegen.dll</HintPath>
+    </Reference>
+    <Reference Include="EventBusModule">
+      <HintPath>..\..\Assemblies\EventBusModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VoiceSpeakers">
+      <HintPath>..\..\Assemblies\VoiceSpeakers.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomNetworkEventsModule">
+      <HintPath>..\..\Assemblies\CustomNetworkEventsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityStatsModule">
+      <HintPath>..\..\Assemblies\EntityStatsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VignetteUIEffectModule">
+      <HintPath>..\..\Assemblies\VignetteUIEffectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SerializableDictionary">
+      <HintPath>..\..\Assemblies\SerializableDictionary.dll</HintPath>
+    </Reference>
+    <Reference Include="SynchronizedModels">
+      <HintPath>..\..\Assemblies\SynchronizedModels.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemyStatHealth">
+      <HintPath>..\..\Assemblies\EnemyStatHealth.dll</HintPath>
+    </Reference>
+    <Reference Include="PlatformStatusRealizationModule">
+      <HintPath>..\..\Assemblies\PlatformStatusRealizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="BasketballHoopModule">
+      <HintPath>..\..\Assemblies\BasketballHoopModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CrocodileGameModule">
+      <HintPath>..\..\Assemblies\CrocodileGameModule.dll</HintPath>
+    </Reference>
+    <Reference Include="TrampolineModule">
+      <HintPath>..\..\Assemblies\TrampolineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="JacuzziBeachInteractableModule">
+      <HintPath>..\..\Assemblies\JacuzziBeachInteractableModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AerohockeyBeachInteractableModule">
+      <HintPath>..\..\Assemblies\AerohockeyBeachInteractableModule.dll</HintPath>
+    </Reference>
+    <Reference Include="BarBeachInteractableModule">
+      <HintPath>..\..\Assemblies\BarBeachInteractableModule.dll</HintPath>
+    </Reference>
+    <Reference Include="BlackjackBeachInteractableModule">
+      <HintPath>..\..\Assemblies\BlackjackBeachInteractableModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SelfMicrophonePlayerModule">
+      <HintPath>..\..\Assemblies\SelfMicrophonePlayerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SettingsMenuModule.Data">
+      <HintPath>..\..\Assemblies\SettingsMenuModule.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemDamageModule">
+      <HintPath>..\..\Assemblies\ItemDamageModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelObjectSpawnModule">
+      <HintPath>..\..\Assemblies\LevelObjectSpawnModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CoinRobSwarmEnemyStateMachine">
+      <HintPath>..\..\Assemblies\CoinRobSwarmEnemyStateMachine.dll</HintPath>
+    </Reference>
+    <Reference Include="UINavigationModuleRealization">
+      <HintPath>..\..\Assemblies\UINavigationModuleRealization.dll</HintPath>
+    </Reference>
+    <Reference Include="PostProcessingModule">
+      <HintPath>..\..\Assemblies\PostProcessingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="HeadcrabEnemyStateMachine">
+      <HintPath>..\..\Assemblies\HeadcrabEnemyStateMachine.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemiesAppearSoundModule">
+      <HintPath>..\..\Assemblies\EnemiesAppearSoundModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitiesSoundOcclusionModule">
+      <HintPath>..\..\Assemblies\EntitiesSoundOcclusionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="RandomSoundPlayModule">
+      <HintPath>..\..\Assemblies\RandomSoundPlayModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SkinConfiguration">
+      <HintPath>..\..\Assemblies\SkinConfiguration.dll</HintPath>
+    </Reference>
+    <Reference Include="MainMenuModule">
+      <HintPath>..\..\Assemblies\MainMenuModule.dll</HintPath>
+    </Reference>
+    <Reference Include="KrakenModule">
+      <HintPath>..\..\Assemblies\KrakenModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayesEyeFocusModule">
+      <HintPath>..\..\Assemblies\PlayesEyeFocusModule.dll</HintPath>
+    </Reference>
+    <Reference Include="TipsModule">
+      <HintPath>..\..\Assemblies\TipsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EmotesModule">
+      <HintPath>..\..\Assemblies\EmotesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DeathHandlingModule">
+      <HintPath>..\..\Assemblies\DeathHandlingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="StruggleBarModule">
+      <HintPath>..\..\Assemblies\StruggleBarModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DamageableTrackModule">
+      <HintPath>..\..\Assemblies\DamageableTrackModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VoiceOcclusionConfiguration">
+      <HintPath>..\..\Assemblies\VoiceOcclusionConfiguration.dll</HintPath>
+    </Reference>
+    <Reference Include="DebugArtSelectorModule">
+      <HintPath>..\..\Assemblies\DebugArtSelectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelGatesModule">
+      <HintPath>..\..\Assemblies\LevelGatesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GamePhasesModule">
+      <HintPath>..\..\Assemblies\GamePhasesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AudioModule">
+      <HintPath>..\..\Assemblies\AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="TeethModule">
+      <HintPath>..\..\Assemblies\TeethModule.dll</HintPath>
+    </Reference>
+    <Reference Include="WorldTokenModule">
+      <HintPath>..\..\Assemblies\WorldTokenModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelLightModule">
+      <HintPath>..\..\Assemblies\LevelLightModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GoogleFormModule">
+      <HintPath>..\..\Assemblies\GoogleFormModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DeadPartEffectModule">
+      <HintPath>..\..\Assemblies\DeadPartEffectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DeadPartsModuleData">
+      <HintPath>..\..\Assemblies\DeadPartsModuleData.dll</HintPath>
+    </Reference>
+    <Reference Include="ChunkSystem">
+      <HintPath>..\..\Assemblies\ChunkSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="HingeModule">
+      <HintPath>..\..\Assemblies\HingeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ChestScreamerModule">
+      <HintPath>..\..\Assemblies\ChestScreamerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Localization">
+      <HintPath>..\..\Assemblies\Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="BeachPresetModule">
+      <HintPath>..\..\Assemblies\BeachPresetModule.dll</HintPath>
+    </Reference>
+    <Reference Include="StreamersSupportModule">
+      <HintPath>..\..\Assemblies\StreamersSupportModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DeviceModule">
+      <HintPath>..\..\Assemblies\DeviceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamModule.Data">
+      <HintPath>..\..\Assemblies\SteamModule.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerThrowModule">
+      <HintPath>..\..\Assemblies\PlayerThrowModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayersStatisticsModule">
+      <HintPath>..\..\Assemblies\PlayersStatisticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomFontAssdetCreatorModule">
+      <HintPath>..\..\Assemblies\CustomFontAssdetCreatorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAnimationsModule">
+      <HintPath>..\..\Assemblies\UIAnimationsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Input">
+      <HintPath>..\..\Assemblies\Input.dll</HintPath>
+    </Reference>
+    <Reference Include="GuideModule">
+      <HintPath>..\..\Assemblies\GuideModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UITipsModule">
+      <HintPath>..\..\Assemblies\UITipsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="TutorialModule.Analytics">
+      <HintPath>..\..\Assemblies\TutorialModule.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="SlotMachineModule">
+      <HintPath>..\..\Assemblies\SlotMachineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CartUpgradesModule.Core">
+      <HintPath>..\..\Assemblies\CartUpgradesModule.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DisconnectHandlerInstaller">
+      <HintPath>..\..\Assemblies\DisconnectHandlerInstaller.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerCustomization">
+      <HintPath>..\..\Assemblies\PlayerCustomization.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerCustomization.Networked">
+      <HintPath>..\..\Assemblies\PlayerCustomization.Networked.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerRenderModule">
+      <HintPath>..\..\Assemblies\PlayerRenderModule.dll</HintPath>
+    </Reference>
+    <Reference Include="TutorialProgressModule">
+      <HintPath>..\..\Assemblies\TutorialProgressModule.dll</HintPath>
+    </Reference>
+    <Reference Include="StrechArmsModule">
+      <HintPath>..\..\Assemblies\StrechArmsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamInviteModule">
+      <HintPath>..\..\Assemblies\SteamInviteModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelGatesData">
+      <HintPath>..\..\Assemblies\LevelGatesData.dll</HintPath>
+    </Reference>
+    <Reference Include="MouseVisibilityModule">
+      <HintPath>..\..\Assemblies\MouseVisibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GamePauseModule">
+      <HintPath>..\..\Assemblies\GamePauseModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemCollisionModule">
+      <HintPath>..\..\Assemblies\ItemCollisionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ItemsModule">
+      <HintPath>..\..\Assemblies\ItemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerOutline">
+      <HintPath>..\..\Assemblies\PlayerOutline.dll</HintPath>
+    </Reference>
+    <Reference Include="GameModeModule">
+      <HintPath>..\..\Assemblies\GameModeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="BeachPresetModuleData">
+      <HintPath>..\..\Assemblies\BeachPresetModuleData.dll</HintPath>
+    </Reference>
+    <Reference Include="LineArmModule.Data">
+      <HintPath>..\..\Assemblies\LineArmModule.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="HeavyItemData">
+      <HintPath>..\..\Assemblies\HeavyItemData.dll</HintPath>
+    </Reference>
+    <Reference Include="RagdollModule">
+      <HintPath>..\..\Assemblies\RagdollModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AIModuleStateMachine.AliveEnemyCount">
+      <HintPath>..\..\Assemblies\AIModuleStateMachine.AliveEnemyCount.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerPresence.Networked">
+      <HintPath>..\..\Assemblies\PlayerPresence.Networked.dll</HintPath>
+    </Reference>
+    <Reference Include="AIModuleStateMachineData">
+      <HintPath>..\..\Assemblies\AIModuleStateMachineData.dll</HintPath>
+    </Reference>
+    <Reference Include="HUDModule">
+      <HintPath>..\..\Assemblies\HUDModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MimicEnemyStateMachine">
+      <HintPath>..\..\Assemblies\MimicEnemyStateMachine.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemySafeZones">
+      <HintPath>..\..\Assemblies\EnemySafeZones.dll</HintPath>
+    </Reference>
+    <Reference Include="FallConstraintModule">
+      <HintPath>..\..\Assemblies\FallConstraintModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemyFearingModule">
+      <HintPath>..\..\Assemblies\EnemyFearingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="BrightnessModule">
+      <HintPath>..\..\Assemblies\BrightnessModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SwimmingModule">
+      <HintPath>..\..\Assemblies\SwimmingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="RuporModule">
+      <HintPath>..\..\Assemblies\RuporModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VoiceOcclusionModule">
+      <HintPath>..\..\Assemblies\VoiceOcclusionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ScreenShakeModule">
+      <HintPath>..\..\Assemblies\ScreenShakeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CameraModelRotation">
+      <HintPath>..\..\Assemblies\CameraModelRotation.dll</HintPath>
+    </Reference>
+    <Reference Include="MovedToBeachLocal">
+      <HintPath>..\..\Assemblies\MovedToBeachLocal.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayersPingModule">
+      <HintPath>..\..\Assemblies\PlayersPingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemyData">
+      <HintPath>..\..\Assemblies\EnemyData.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkTelemetry">
+      <HintPath>..\..\Assemblies\NetworkTelemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="ConfirmExitModule">
+      <HintPath>..\..\Assemblies\ConfirmExitModule.dll</HintPath>
+    </Reference>
+    <Reference Include="BigButtBeachInteractbleModule">
+      <HintPath>..\..\Assemblies\BigButtBeachInteractbleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="FogModule">
+      <HintPath>..\..\Assemblies\FogModule.dll</HintPath>
+    </Reference>
+    <Reference Include="TutorialModule.TutorialStepsSystem">
+      <HintPath>..\..\Assemblies\TutorialModule.TutorialStepsSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="TutorialModule.TutorialCheckpointSystem">
+      <HintPath>..\..\Assemblies\TutorialModule.TutorialCheckpointSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="MusicalInstrumentsModule">
+      <HintPath>..\..\Assemblies\MusicalInstrumentsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="RunningSessionModule">
+      <HintPath>..\..\Assemblies\RunningSessionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="HostDisconnectHandlerModule">
+      <HintPath>..\..\Assemblies\HostDisconnectHandlerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerCustomizationInstaller">
+      <HintPath>..\..\Assemblies\PlayerCustomizationInstaller.dll</HintPath>
+    </Reference>
+    <Reference Include="CollectingModule">
+      <HintPath>..\..\Assemblies\CollectingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CurrencyModule">
+      <HintPath>..\..\Assemblies\CurrencyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectDespawnModule">
+      <HintPath>..\..\Assemblies\ObjectDespawnModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VoiceInstaller">
+      <HintPath>..\..\Assemblies\VoiceInstaller.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendedLogger">
+      <HintPath>..\..\Assemblies\ExtendedLogger.dll</HintPath>
+    </Reference>
+    <Reference Include="TeleportModule">
+      <HintPath>..\..\Assemblies\TeleportModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PhysicsUtilsModule">
+      <HintPath>..\..\Assemblies\PhysicsUtilsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MicrophoneEneblingSystem">
+      <HintPath>..\..\Assemblies\MicrophoneEneblingSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerMuteModule">
+      <HintPath>..\..\Assemblies\PlayerMuteModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UserReport.Di">
+      <HintPath>..\..\Assemblies\UserReport.Di.dll</HintPath>
+    </Reference>
+    <Reference Include="EnumHelpersModule">
+      <HintPath>..\..\Assemblies\EnumHelpersModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.MockableRealization">
+      <HintPath>..\..\Assemblies\Zenject.MockableRealization.dll</HintPath>
+    </Reference>
+    <Reference Include="ScreenKeyboardModule">
+      <HintPath>..\..\Assemblies\ScreenKeyboardModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UserStatsModule.API">
+      <HintPath>..\..\Assemblies\UserStatsModule.API.dll</HintPath>
+    </Reference>
+    <Reference Include="SpecialTagsProcessor">
+      <HintPath>..\..\Assemblies\SpecialTagsProcessor.dll</HintPath>
+    </Reference>
+    <Reference Include="TutorialModule.TutorialSteps.Di">
+      <HintPath>..\..\Assemblies\TutorialModule.TutorialSteps.Di.dll</HintPath>
+    </Reference>
+    <Reference Include="OverlayUI">
+      <HintPath>..\..\Assemblies\OverlayUI.dll</HintPath>
+    </Reference>
+    <Reference Include="UserStatsModule.Steam">
+      <HintPath>..\..\Assemblies\UserStatsModule.Steam.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomUIVignetteModule">
+      <HintPath>..\..\Assemblies\CustomUIVignetteModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GlobalFactories">
+      <HintPath>..\..\Assemblies\GlobalFactories.dll</HintPath>
+    </Reference>
+    <Reference Include="SceneLoaderRealization">
+      <HintPath>..\..\Assemblies\SceneLoaderRealization.dll</HintPath>
+    </Reference>
+    <Reference Include="AssetLoaderRealization">
+      <HintPath>..\..\Assemblies\AssetLoaderRealization.dll</HintPath>
+    </Reference>
+    <Reference Include="GameplayEvents">
+      <HintPath>..\..\Assemblies\GameplayEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="StoreModule.Roster">
+      <HintPath>..\..\Assemblies\StoreModule.Roster.dll</HintPath>
+    </Reference>
+    <Reference Include="SavingModule.MainRealization">
+      <HintPath>..\..\Assemblies\SavingModule.MainRealization.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandLineArguments">
+      <HintPath>..\..\Assemblies\CommandLineArguments.dll</HintPath>
+    </Reference>
+    <Reference Include="SynchronizedModels.Json">
+      <HintPath>..\..\Assemblies\SynchronizedModels.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SynchronizedModels.DataStreaming">
+      <HintPath>..\..\Assemblies\SynchronizedModels.DataStreaming.dll</HintPath>
+    </Reference>
+    <Reference Include="VSyncServiceModule">
+      <HintPath>..\..\Assemblies\VSyncServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AudioVolumeModule">
+      <HintPath>..\..\Assemblies\AudioVolumeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AudioServiceModule">
+      <HintPath>..\..\Assemblies\AudioServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ApplicationFilesRealizationModule">
+      <HintPath>..\..\Assemblies\ApplicationFilesRealizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="InputDeviceModuleRealization">
+      <HintPath>..\..\Assemblies\InputDeviceModuleRealization.dll</HintPath>
+    </Reference>
+    <Reference Include="JsonConvertorModule">
+      <HintPath>..\..\Assemblies\JsonConvertorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DatabaseModule.Usage">
+      <HintPath>..\..\Assemblies\DatabaseModule.Usage.dll</HintPath>
+    </Reference>
+    <Reference Include="CoroutineRunner">
+      <HintPath>..\..\Assemblies\CoroutineRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelModuleInstallers">
+      <HintPath>..\..\Assemblies\LevelModuleInstallers.dll</HintPath>
+    </Reference>
+    <Reference Include="GameJournaling">
+      <HintPath>..\..\Assemblies\GameJournaling.dll</HintPath>
+    </Reference>
+    <Reference Include="GameUpdaterModule">
+      <HintPath>..\..\Assemblies\GameUpdaterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SteamImplementationModule">
+      <HintPath>..\..\Assemblies\SteamImplementationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlatformStatusRealization.Installers">
+      <HintPath>..\..\Assemblies\PlatformStatusRealization.Installers.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerIdentity">
+      <HintPath>..\..\Assemblies\PlayerIdentity.dll</HintPath>
+    </Reference>
+    <Reference Include="ChineseDetectionInstallers">
+      <HintPath>..\..\Assemblies\ChineseDetectionInstallers.dll</HintPath>
+    </Reference>
+    <Reference Include="PhysicsVolumeModule">
+      <HintPath>..\..\Assemblies\PhysicsVolumeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsSystems">
+      <HintPath>..\..\Assemblies\AnalyticsSystems.dll</HintPath>
+    </Reference>
+    <Reference Include="SessionManagement.Installers">
+      <HintPath>..\..\Assemblies\SessionManagement.Installers.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerCustomization.LobbyAvatar.Systems">
+      <HintPath>..\..\Assemblies\PlayerCustomization.LobbyAvatar.Systems.dll</HintPath>
+    </Reference>
+    <Reference Include="EnvironmentSpawnModule">
+      <HintPath>..\..\Assemblies\EnvironmentSpawnModule.dll</HintPath>
+    </Reference>
+    <Reference Include="QuotaModuleInstallers">
+      <HintPath>..\..\Assemblies\QuotaModuleInstallers.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelModuleSystems">
+      <HintPath>..\..\Assemblies\LevelModuleSystems.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerStatesModule.Systems">
+      <HintPath>..\..\Assemblies\PlayerStatesModule.Systems.dll</HintPath>
+    </Reference>
+    <Reference Include="VoiceChangeOnStates">
+      <HintPath>..\..\Assemblies\VoiceChangeOnStates.dll</HintPath>
+    </Reference>
+    <Reference Include="NavigationModuleInstallers">
+      <HintPath>..\..\Assemblies\NavigationModuleInstallers.dll</HintPath>
+    </Reference>
+    <Reference Include="AIModuleStateMachineInstallers">
+      <HintPath>..\..\Assemblies\AIModuleStateMachineInstallers.dll</HintPath>
+    </Reference>
+    <Reference Include="SleeperEnemyStateMachine">
+      <HintPath>..\..\Assemblies\SleeperEnemyStateMachine.dll</HintPath>
+    </Reference>
+    <Reference Include="CameraDebug">
+      <HintPath>..\..\Assemblies\CameraDebug.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerRagdollAudio">
+      <HintPath>..\..\Assemblies\PlayerRagdollAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="OcclusionModule">
+      <HintPath>..\..\Assemblies\OcclusionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerSkinModule">
+      <HintPath>..\..\Assemblies\PlayerSkinModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LineArmInstallers">
+      <HintPath>..\..\Assemblies\LineArmInstallers.dll</HintPath>
+    </Reference>
+    <Reference Include="BoosterModule">
+      <HintPath>..\..\Assemblies\BoosterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CartUpgradesModule.Installers">
+      <HintPath>..\..\Assemblies\CartUpgradesModule.Installers.dll</HintPath>
+    </Reference>
+    <Reference Include="RegenerationModule">
+      <HintPath>..\..\Assemblies\RegenerationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="StreamersSupportInstaller">
+      <HintPath>..\..\Assemblies\StreamersSupportInstaller.dll</HintPath>
+    </Reference>
+    <Reference Include="TeethModuleIntaller">
+      <HintPath>..\..\Assemblies\TeethModuleIntaller.dll</HintPath>
+    </Reference>
+    <Reference Include="GuillotineModule">
+      <HintPath>..\..\Assemblies\GuillotineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ParkourBeachInteractableModule">
+      <HintPath>..\..\Assemblies\ParkourBeachInteractableModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SkinChangeModule">
+      <HintPath>..\..\Assemblies\SkinChangeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="KnifeThrowingModule">
+      <HintPath>..\..\Assemblies\KnifeThrowingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="TutorialModule.TutorialStepsFactorySystems.Di">
+      <HintPath>..\..\Assemblies\TutorialModule.TutorialStepsFactorySystems.Di.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\Assemblies\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Realtime">
+      <HintPath>..\..\Assemblies\Fusion.Realtime.dll</HintPath>
+    </Reference>
+    <Reference Include="SharedData">
+      <HintPath>..\..\Assemblies\SharedData.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject.AddressablesConfigurationsLoader">
+      <HintPath>..\..\Assemblies\Zenject.AddressablesConfigurationsLoader.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

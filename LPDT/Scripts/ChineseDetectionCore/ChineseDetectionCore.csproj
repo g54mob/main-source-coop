@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>ChineseDetectionCore</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="SteamImplementationModule">
+      <HintPath>..\..\Assemblies\SteamImplementationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SettingsMenuModule.Data">
+      <HintPath>..\..\Assemblies\SettingsMenuModule.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Localization">
+      <HintPath>..\..\Assemblies\Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Realtime">
+      <HintPath>..\..\Assemblies\Fusion.Realtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,71 @@
+using Unity.Mathematics;
+
+namespace Obi
+{
+	public struct BurstCollisionMaterial
+	{
+		public float dynamicFriction;
+
+		public float staticFriction;
+
+		public float rollingFriction;
+
+		public float stickiness;
+
+		public float stickDistance;
+
+		public Oni.MaterialCombineMode frictionCombine;
+
+		public Oni.MaterialCombineMode stickinessCombine;
+
+		public int rollingContacts;
+
+		public static BurstCollisionMaterial CombineWith(BurstCollisionMaterial a, BurstCollisionMaterial b)
+		{
+			BurstCollisionMaterial result = default(BurstCollisionMaterial);
+			Oni.MaterialCombineMode materialCombineMode = (Oni.MaterialCombineMode)math.max((int)a.frictionCombine, (int)b.frictionCombine);
+			Oni.MaterialCombineMode materialCombineMode2 = (Oni.MaterialCombineMode)math.max((int)a.stickinessCombine, (int)b.stickinessCombine);
+			switch (materialCombineMode)
+			{
+			default:
+				result.dynamicFriction = (a.dynamicFriction + b.dynamicFriction) * 0.5f;
+				result.staticFriction = (a.staticFriction + b.staticFriction) * 0.5f;
+				result.rollingFriction = (a.rollingFriction + b.rollingFriction) * 0.5f;
+				break;
+			case Oni.MaterialCombineMode.Minimum:
+				result.dynamicFriction = math.min(a.dynamicFriction, b.dynamicFriction);
+				result.staticFriction = math.min(a.staticFriction, b.staticFriction);
+				result.rollingFriction = math.min(a.rollingFriction, b.rollingFriction);
+				break;
+			case Oni.MaterialCombineMode.Multiply:
+				result.dynamicFriction = a.dynamicFriction * b.dynamicFriction;
+				result.staticFriction = a.staticFriction * b.staticFriction;
+				result.rollingFriction = a.rollingFriction * b.rollingFriction;
+				break;
+			case Oni.MaterialCombineMode.Maximum:
+				result.dynamicFriction = math.max(a.dynamicFriction, b.dynamicFriction);
+				result.staticFriction = math.max(a.staticFriction, b.staticFriction);
+				result.rollingFriction = math.max(a.rollingFriction, b.rollingFriction);
+				break;
+			}
+			switch (materialCombineMode2)
+			{
+			default:
+				result.stickiness = (a.stickiness + b.stickiness) * 0.5f;
+				break;
+			case Oni.MaterialCombineMode.Minimum:
+				result.stickiness = math.min(a.stickiness, b.stickiness);
+				break;
+			case Oni.MaterialCombineMode.Multiply:
+				result.stickiness = a.stickiness * b.stickiness;
+				break;
+			case Oni.MaterialCombineMode.Maximum:
+				result.stickiness = math.max(a.stickiness, b.stickiness);
+				break;
+			}
+			result.stickDistance = math.max(a.stickDistance, b.stickDistance);
+			result.rollingContacts = a.rollingContacts | b.rollingContacts;
+			return result;
+		}
+	}
+}

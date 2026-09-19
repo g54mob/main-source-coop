@@ -1,0 +1,127 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>PirateEnemyBehaviour</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="MovementModule">
+      <HintPath>..\..\Assemblies\MovementModule.dll</HintPath>
+    </Reference>
+    <Reference Include="NavigationModule">
+      <HintPath>..\..\Assemblies\NavigationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerStatesModule">
+      <HintPath>..\..\Assemblies\PlayerStatesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LevelGatesData">
+      <HintPath>..\..\Assemblies\LevelGatesData.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsData">
+      <HintPath>..\..\Assemblies\AnalyticsData.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemySensors">
+      <HintPath>..\..\Assemblies\EnemySensors.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerSpawnerModule">
+      <HintPath>..\..\Assemblies\PlayerSpawnerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AudioServiceModule">
+      <HintPath>..\..\Assemblies\AudioServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="FMODUnity">
+      <HintPath>..\..\Assemblies\FMODUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityHFSM">
+      <HintPath>..\..\Assemblies\UnityHFSM.dll</HintPath>
+    </Reference>
+    <Reference Include="AIModule">
+      <HintPath>..\..\Assemblies\AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemyData">
+      <HintPath>..\..\Assemblies\EnemyData.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemyFearingModule">
+      <HintPath>..\..\Assemblies\EnemyFearingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AIModuleStateMachineServices">
+      <HintPath>..\..\Assemblies\AIModuleStateMachineServices.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemySafeZones">
+      <HintPath>..\..\Assemblies\EnemySafeZones.dll</HintPath>
+    </Reference>
+    <Reference Include="EnemyStatHealth">
+      <HintPath>..\..\Assemblies\EnemyStatHealth.dll</HintPath>
+    </Reference>
+    <Reference Include="AIModuleStateMachineData">
+      <HintPath>..\..\Assemblies\AIModuleStateMachineData.dll</HintPath>
+    </Reference>
+    <Reference Include="DamageableTrackModule">
+      <HintPath>..\..\Assemblies\DamageableTrackModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="AnimationModule">
+      <HintPath>..\..\Assemblies\AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Assemblies\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="BombModule">
+      <HintPath>..\..\Assemblies\BombModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Animation.Rigging">
+      <HintPath>..\..\Assemblies\Unity.Animation.Rigging.dll</HintPath>
+    </Reference>
+    <Reference Include="WeaponModule">
+      <HintPath>..\..\Assemblies\WeaponModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Assemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Common">
+      <HintPath>..\..\Assemblies\Fusion.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="StateMachineDebug">
+      <HintPath>..\..\Assemblies\StateMachineDebug.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Assemblies\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Log">
+      <HintPath>..\..\Assemblies\Fusion.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkServices">
+      <HintPath>..\..\Assemblies\NetworkServices.dll</HintPath>
+    </Reference>
+    <Reference Include="InteractModule">
+      <HintPath>..\..\Assemblies\InteractModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

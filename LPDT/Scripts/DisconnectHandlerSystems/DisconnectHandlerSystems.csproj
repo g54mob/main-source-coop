@@ -1,0 +1,73 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>DisconnectHandlerSystems</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="NetworkServices">
+      <HintPath>..\..\Assemblies\NetworkServices.dll</HintPath>
+    </Reference>
+    <Reference Include="MultiplayerSessionServices">
+      <HintPath>..\..\Assemblies\MultiplayerSessionServices.dll</HintPath>
+    </Reference>
+    <Reference Include="DisconnectHandlerData">
+      <HintPath>..\..\Assemblies\DisconnectHandlerData.dll</HintPath>
+    </Reference>
+    <Reference Include="RunningSessionModule">
+      <HintPath>..\..\Assemblies\RunningSessionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="SceneTransitionsModule">
+      <HintPath>..\..\Assemblies\SceneTransitionsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="StateMachinesModule">
+      <HintPath>..\..\Assemblies\StateMachinesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsModuleCore">
+      <HintPath>..\..\Assemblies\AnalyticsModuleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UniTask">
+      <HintPath>..\..\Assemblies\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="Fusion.Runtime">
+      <HintPath>..\..\Assemblies\Fusion.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsData">
+      <HintPath>..\..\Assemblies\AnalyticsData.dll</HintPath>
+    </Reference>
+    <Reference Include="SceneLoaderModule">
+      <HintPath>..\..\Assemblies\SceneLoaderModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="EventBusModule">
+      <HintPath>..\..\Assemblies\EventBusModule.dll</HintPath>
+    </Reference>
+    <Reference Include="HostDisconnectHandlerModule">
+      <HintPath>..\..\Assemblies\HostDisconnectHandlerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomNetworkEventsModule">
+      <HintPath>..\..\Assemblies\CustomNetworkEventsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\Assemblies\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerSpawnerModule">
+      <HintPath>..\..\Assemblies\PlayerSpawnerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayerGrabModule">
+      <HintPath>..\..\Assemblies\PlayerGrabModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

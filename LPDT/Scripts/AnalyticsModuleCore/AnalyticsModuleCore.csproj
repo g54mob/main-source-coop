@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>AnalyticsModuleCore</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="AnalyticsData">
+      <HintPath>..\..\Assemblies\AnalyticsData.dll</HintPath>
+    </Reference>
+    <Reference Include="SavingModule">
+      <HintPath>..\..\Assemblies\SavingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsMarkService">
+      <HintPath>..\..\Assemblies\AnalyticsMarkService.dll</HintPath>
+    </Reference>
+    <Reference Include="GameJournaling">
+      <HintPath>..\..\Assemblies\GameJournaling.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>..\..\Assemblies\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\Assemblies\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="GameAnalytics.Plugins">
+      <HintPath>..\..\Assemblies\GameAnalytics.Plugins.dll</HintPath>
+    </Reference>
+    <Reference Include="AnalyticsModuleExtensions">
+      <HintPath>..\..\Assemblies\AnalyticsModuleExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendedLogger">
+      <HintPath>..\..\Assemblies\ExtendedLogger.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

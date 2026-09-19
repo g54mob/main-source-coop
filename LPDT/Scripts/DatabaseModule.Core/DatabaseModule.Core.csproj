@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>DatabaseModule.Core</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="CsvConverterModule.Core">
+      <HintPath>..\..\Assemblies\CsvConverterModule.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ApplicationFilesModule.Core">
+      <HintPath>..\..\Assemblies\ApplicationFilesModule.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Sheets.v4">
+      <HintPath>..\..\Assemblies\Google.Apis.Sheets.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth">
+      <HintPath>..\..\Assemblies\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\Assemblies\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis">
+      <HintPath>..\..\Assemblies\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core">
+      <HintPath>..\..\Assemblies\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Drive.v3">
+      <HintPath>..\..\Assemblies\Google.Apis.Drive.v3.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

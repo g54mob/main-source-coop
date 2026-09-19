@@ -1,0 +1,56 @@
+using UnityEngine;
+
+namespace Obi.Samples
+{
+	[RequireComponent(typeof(ObiRope))]
+	public class RopeTensionColorizer : MonoBehaviour
+	{
+		public float minTension;
+
+		public float maxTension = 0.2f;
+
+		public Color normalColor = Color.green;
+
+		public Color tensionColor = Color.red;
+
+		public RopeTenser tenser;
+
+		public float tenserThreshold = -5f;
+
+		public float tenserMax = 0.1f;
+
+		private ObiRope rope;
+
+		private Material localMaterial;
+
+		private void Awake()
+		{
+			rope = GetComponent<ObiRope>();
+			ObiRopeLineRenderer component = GetComponent<ObiRopeLineRenderer>();
+			localMaterial = Object.Instantiate(component.material);
+			component.material = localMaterial;
+		}
+
+		private void OnDestroy()
+		{
+			Object.Destroy(localMaterial);
+		}
+
+		private void Update()
+		{
+			if (!(tenser == null))
+			{
+				float num = Mathf.Min((tenser.transform.position.y - tenserThreshold) / tenserMax, 1f);
+				if (num > 0f)
+				{
+					float num2 = (rope.CalculateLength() / rope.restLength - 1f - minTension) / (maxTension - minTension);
+					localMaterial.color = Color.Lerp(normalColor, tensionColor, num2 * num);
+				}
+				else
+				{
+					localMaterial.color = normalColor;
+				}
+			}
+		}
+	}
+}

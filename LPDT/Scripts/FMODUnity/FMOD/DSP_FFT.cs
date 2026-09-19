@@ -1,0 +1,16 @@
+namespace FMOD
+{
+	public enum DSP_FFT
+	{
+		WINDOWSIZE = 0,
+		WINDOW = 1,
+		BAND_START_FREQ = 2,
+		BAND_STOP_FREQ = 3,
+		SPECTRUMDATA = 4,
+		RMS = 5,
+		SPECTRAL_CENTROID = 6,
+		IMMEDIATE_MODE = 7,
+		DOWNMIX = 8,
+		CHANNEL = 9
+	}
+}
