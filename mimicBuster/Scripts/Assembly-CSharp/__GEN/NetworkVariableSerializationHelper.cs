@@ -1,0 +1,54 @@
+using Mimicraft.Gameplay;
+using Mimicraft.Networking;
+using Unity.Collections;
+using Unity.Netcode;
+using UnityEngine;
+
+namespace __GEN
+{
+	internal class NetworkVariableSerializationHelper
+	{
+		[RuntimeInitializeOnLoadMethod]
+		internal static void InitializeSerialization()
+		{
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedByMemcpy<PlayerRole>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedValueEquals<PlayerRole>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedByMemcpy<double>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<double>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedByMemcpy<MvpKind>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedValueEquals<MvpKind>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedINetworkSerializable<PlayerScoreEntry>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<PlayerScoreEntry>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedByMemcpy<RoundPhase>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedValueEquals<RoundPhase>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedINetworkSerializable<PlayerNameEntry>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<PlayerNameEntry>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedINetworkSerializable<PlayerRevealEntry>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<PlayerRevealEntry>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedINetworkSerializable<PlayerLatencyEntry>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<PlayerLatencyEntry>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedINetworkSerializable<VoteKickState>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<VoteKickState>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedByMemcpy<DeathmatchRoundManager.Stage>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedValueEquals<DeathmatchRoundManager.Stage>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedByMemcpy<GarticPhase>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedValueEquals<GarticPhase>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_FixedString<FixedString64Bytes>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<FixedString64Bytes>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_FixedString<FixedString32Bytes>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<FixedString32Bytes>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedByMemcpy<bool>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<bool>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedINetworkSerializable<LobbySettingsData>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<LobbySettingsData>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedINetworkSerializable<VoxelModelPayload>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<VoxelModelPayload>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedByMemcpy<byte>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<byte>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedByMemcpy<float>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedIEquatable<float>();
+			NetworkVariableSerializationTypedInitializers.InitializeSerializer_UnmanagedByMemcpy<RagdollState>();
+			NetworkVariableSerializationTypedInitializers.InitializeEqualityChecker_UnmanagedValueEquals<RagdollState>();
+		}
+	}
+}
